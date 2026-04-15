@@ -2,399 +2,455 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-  <meta name="description" content="NeoProEd is India's insurance-exclusive professional education platform. Practitioner-built programmes for insurance professionals, organisations, and students. Founding cohort enrolling now.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://neoproed.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="NeoProEd — Insurance Professional Education | India">
-  <meta property="og:description" content="NeoProEd is India's insurance-exclusive professional education platform. Practitioner-built programmes for insurance professionals, organisations, and students. Founding cohort enrolling now.">
-  <meta property="og:url" content="https://neoproed.com/">
-  <meta property="og:image" content="https://neoproed.com/og-image.png">
-  <meta property="og:site_name" content="NeoProEd">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="NeoProEd — Insurance Professional Education | India">
-  <meta name="twitter:description" content="NeoProEd is India's insurance-exclusive professional education platform. Practitioner-built programmes for insurance professionals, organisations, and students. Founding cohort enrolling now.">
-  <meta name="twitter:image" content="https://neoproed.com/og-image.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "NeoProEd",
-  "url": "https://neoproed.com",
-  "logo": "https://neoproed.com/og-image.png",
-  "description": "NeoProEd is India's insurance-exclusive professional education platform. Practitioner-built programmes for insurance professionals, organisations, and students. Founding cohort enrolling now.",
-  "address": {"@type": "PostalAddress", "addressCountry": "IN"},
-  "contactPoint": {"@type": "ContactPoint", "email": "neoproed@gmail.com", "contactType": "customer service"}
-}
-</script>
-
-  <!-- Google tag (gtag.js) — replace G-XXXXXXXXXX with your Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    // Consent mode v2 — defaults to denied until visitor accepts cookies
-    gtag('consent', 'default', {
-      'analytics_storage': 'denied',
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied'
-    });
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NeoProEd — Insurance Professional Education | India</title>
+<meta name="description" content="NeoProEd is India's insurance-exclusive professional education platform. Practitioner-built programmes for insurance professionals, organisations, and students. Founding cohort enrolling now.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://neoproed.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NeoProEd — Insurance Professional Education | India">
+<meta property="og:description" content="NeoProEd is India's insurance-exclusive professional education platform. Practitioner-built programmes for insurance professionals, organisations, and students. Founding cohort enrolling now.">
+<meta property="og:url" content="https://neoproed.com/">
+<meta property="og:image" content="https://neoproed.com/og-image.png">
+<meta property="og:site_name" content="NeoProEd">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NeoProEd — Insurance Professional Education | India">
+<meta name="twitter:description" content="NeoProEd is India's insurance-exclusive professional education platform. Practitioner-built programmes for insurance professionals, organisations, and students. Founding cohort enrolling now.">
+<meta name="twitter:image" content="https://neoproed.com/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"NeoProEd","url":"https://neoproed.com","logo":"https://neoproed.com/og-image.png","description":"India's insurance-exclusive professional education platform.","address":{"@type":"PostalAddress","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","email":"neoproed@gmail.com","contactType":"customer service"}}
+</script>
+<!-- GA4 — replace G-XXXXXXXXXX -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied'});
+gtag('config','G-XXXXXXXXXX');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* ── NAV ── */
-nav{background:#06101A;border-bottom:1px solid #162638;position:sticky;top:0;z-index:500;width:100%;}
-.nav-inner{display:flex;align-items:center;padding:0 20px;height:54px;max-width:1080px;margin:0 auto;}
-@media(min-width:901px){.nav-inner{padding:0 48px;}}
+/* ═══════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;} /* NO overflow-x here — it breaks position:sticky */
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:#FFFFFF;color:#071A2E;}
+img,video,iframe{max-width:100%;height:auto;display:block;}
+
+/* Contain overflow at component level, not page level */
+.overflow-safe{max-width:100%;overflow-x:clip;}
+
+/* ═══════════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════════ */
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+@media(min-width:900px){.wrap{padding:0 48px;}}
+
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════════ */
+/* Dark bg: #06101A / #0B1828 / #0C1E30 */
+/* Light bg: #FFFFFF / #F2F7FC */
+/* Accent: #1860AA (interactive) / #4DA8FF (decorative) */
+.ey-dk{font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#A8C0D4;margin-bottom:10px;}
+.ey-lt{font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#1860AA;margin-bottom:10px;}
+.h2-dk{font-size:28px;font-weight:900;color:#F5F9FF;line-height:1.15;letter-spacing:-.03em;margin-bottom:12px;}
+.h2-lt{font-size:28px;font-weight:900;color:#071A2E;line-height:1.15;letter-spacing:-.03em;margin-bottom:12px;}
+.body-dk{font-size:15px;font-weight:600;color:#E0EAF4;line-height:1.75;}
+.body-lt{font-size:15px;font-weight:600;color:#1E3A54;line-height:1.75;}
+@media(min-width:900px){.h2-dk,.h2-lt{font-size:36px;}.body-dk,.body-lt{font-size:16px;}}
+
+/* ═══════════════════════════════════════════
+   NAVIGATION — mobile-first
+═══════════════════════════════════════════ */
+nav{
+  background:#06101A;
+  border-bottom:1px solid #162638;
+  position:sticky;
+  top:0;
+  z-index:500;
+  /* NO width:100% needed — block elements are 100% by default */
+  /* NO overflow — would break sticky on descendants */
+}
+.nav-inner{
+  display:flex;
+  align-items:center;
+  height:56px;
+  padding:0 20px;
+  max-width:1080px;
+  margin:0 auto;
+  gap:8px;
+}
 .logo{font-size:20px;font-weight:900;color:#F5F9FF;letter-spacing:-.02em;text-decoration:none;flex-shrink:0;}
 .logo em{color:#4DA8FF;font-style:normal;}
-.nav-links{display:flex;gap:4px;margin-left:16px;flex:1;}
-.nav-links a{font-size:12px;font-weight:700;color:#A8C0D4;padding:6px 8px;border-radius:5px;text-decoration:none;white-space:nowrap;}
-.nav-links a:hover,.nav-links a.active{color:#F5F9FF;background:#0C1E30;}
-.nav-r{display:flex;gap:8px;align-items:center;flex-shrink:0;}
-.btn-ghost{font-size:12px;font-weight:700;color:#F5F9FF;padding:7px 13px;border:1px solid #4DA8FF;border-radius:6px;background:transparent;text-decoration:none;white-space:nowrap;}
-.btn-primary{font-size:12px;font-weight:800;color:#F5F9FF;padding:7px 14px;border-radius:6px;background:#1860AA;border:1px solid #1860AA;text-decoration:none;white-space:nowrap;}
-.ham{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:8px;background:none;border:none;flex-shrink:0;}
-.ham span{display:block;width:22px;height:2px;background:#E0EAF4;border-radius:2px;transition:transform .25s,opacity .25s;}
-#mob-drawer{display:none;position:fixed;left:0;right:0;top:54px;bottom:0;background:#06101A;z-index:199;flex-direction:column;overflow-y:auto;border-top:1px solid #1E3A52;}
-#mob-drawer.open{display:flex !important;}
-#mob-drawer a{font-size:16px;font-weight:700;color:#E0EAF4;padding:16px 24px;border-bottom:1px solid #162638;text-decoration:none;display:block;}
-#mob-drawer a:active{background:#0C1E30;}
-#mob-drawer .mob-cta{margin:20px 24px;background:#1860AA;color:#FFF;text-align:center;padding:14px;border-radius:8px;font-size:15px;font-weight:800;border-bottom:none;display:block;}
-body.nav-open{overflow:hidden;}
-@media(max-width:800px){
-  .nav-links{display:none;}
-  .nav-r{display:none;}
-  .nav-inner{justify-content:space-between;padding:0 16px;}
 
-  .ham{display:flex;}
+/* Nav links — hidden on mobile, shown on desktop */
+.nav-links{display:none;gap:4px;flex:1;margin-left:12px;}
+.nav-links a{font-size:12px;font-weight:700;color:#A8C0D4;padding:6px 8px;border-radius:5px;text-decoration:none;}
+.nav-links a:hover,.nav-links a.active{color:#F5F9FF;background:#0C1E30;}
+
+/* Right buttons — hidden on mobile */
+.nav-r{display:none;gap:8px;align-items:center;flex-shrink:0;}
+.btn-ghost{font-size:12px;font-weight:700;color:#F5F9FF;padding:7px 13px;border:1px solid #4DA8FF;border-radius:6px;background:transparent;text-decoration:none;}
+.btn-primary{font-size:12px;font-weight:800;color:#F5F9FF;padding:7px 14px;border-radius:6px;background:#1860AA;border:1px solid #1860AA;text-decoration:none;}
+
+/* Hamburger — shown on mobile */
+.ham{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:5px;
+  cursor:pointer;
+  padding:8px;
+  background:none;
+  border:none;
+  flex-shrink:0;
+  margin-left:auto;
+  min-width:44px;
+  min-height:44px;
+  align-items:center;
+}
+.ham span{display:block;width:22px;height:2px;background:#E0EAF4;border-radius:2px;transition:transform .25s,opacity .25s;}
+
+/* Mobile drawer */
+#mob-drawer{
+  display:none;
+  position:fixed;
+  left:0;right:0;top:56px;bottom:0;
+  background:#06101A;
+  z-index:499;
+  flex-direction:column;
+  overflow-y:auto;
+  border-top:1px solid #1E3A52;
+}
+#mob-drawer.open{display:flex;}
+#mob-drawer a{
+  font-size:17px;font-weight:700;color:#E0EAF4;
+  padding:18px 24px;
+  border-bottom:1px solid #162638;
+  text-decoration:none;
+  display:block;
+  min-height:56px;
+  display:flex;
+  align-items:center;
+}
+#mob-drawer a:active{background:#0C1E30;}
+#mob-drawer .mob-cta{
+  margin:20px 24px 8px;
+  background:#1860AA;color:#FFF;
+  text-align:center;padding:16px;
+  border-radius:8px;font-size:15px;font-weight:800;
+  border-bottom:none;
+  justify-content:center;
+}
+body.nav-open{overflow:hidden;}
+
+@media(min-width:801px){
+  .ham{display:none;}
+  .nav-links{display:flex;}
+  .nav-r{display:flex;}
+}
+@media(min-width:901px){
+  .nav-inner{padding:0 48px;}
 }
 
-*, *::before, *::after{box-sizing:border-box;}
-html{overflow-x:clip;}body{max-width:100%;}
-img,video,iframe,table{max-width:100%;}
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+#hero{background:#06101A;padding:56px 0 44px;}
+@media(min-width:900px){#hero{padding:80px 0 64px;}}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:32px;}
+@media(min-width:840px){.hero-grid{grid-template-columns:1fr 1fr;gap:52px;align-items:center;}}
+.hero-ey{font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#F5F9FF;display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.hero-ey-line{height:2px;width:28px;background:#4DA8FF;flex-shrink:0;}
+.hero-h1{font-size:26px;font-weight:900;color:#F5F9FF;line-height:1.12;letter-spacing:-.03em;margin-bottom:14px;}
+.hero-h1 em{color:#4DA8FF;font-style:normal;}
+@media(min-width:480px){.hero-h1{font-size:32px;}}
+@media(min-width:900px){.hero-h1{font-size:44px;}}
+.hero-sub{font-size:14px;font-weight:600;color:#E0EAF4;line-height:1.8;margin-bottom:20px;}
+@media(min-width:600px){.hero-sub{font-size:15px;}}
+.hero-pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.h-pill{font-size:11px;font-weight:800;padding:5px 12px;border-radius:20px;background:#0C2040;color:#F5F9FF;border:1px solid #1E3A58;}
+.hero-dual-cta{display:flex;gap:12px;flex-wrap:wrap;}
+.dual-cta-p{font-size:14px;font-weight:800;padding:12px 24px;border-radius:7px;background:#1860AA;color:#F5F9FF;border:2px solid #1860AA;text-decoration:none;display:inline-block;cursor:pointer;}
+.dual-cta-s{font-size:14px;font-weight:800;padding:12px 24px;border-radius:7px;background:transparent;color:#F5F9FF;border:2px solid #A8C0D4;text-decoration:none;display:inline-block;cursor:pointer;}
+@media(max-width:479px){
+  .hero-dual-cta{flex-direction:column;}
+  .dual-cta-p,.dual-cta-s{text-align:center;width:100%;}
+}
+.hero-card{background:#FFFFFF;border:1px solid #C8DCF0;border-radius:14px;padding:24px;box-shadow:0 4px 24px rgba(0,0,0,.25);}
+.hc-badge{font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;background:#1860AA;color:#FFF;padding:5px 12px;border-radius:4px;display:inline-block;margin-bottom:14px;}
+.hc-label{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#4A6A88;margin-bottom:12px;}
+.hc-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #E0EAF4;}
+.hc-row:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+.hc-n{font-size:20px;font-weight:900;color:#1860AA;min-width:28px;line-height:1;flex-shrink:0;}
+.hc-title{font-size:13px;font-weight:800;color:#071A2E;margin-bottom:4px;}
+.hc-text{font-size:12px;font-weight:600;color:#1E3A54;line-height:1.65;}
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; background: #FFFFFF; color: #071A2E; }
+/* ═══════════════════════════════════════════
+   SEGMENT HUB
+═══════════════════════════════════════════ */
+#segment-hub{background:#FFFFFF;padding:56px 0;border-top:1px solid #C8DCF0;}
+.hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(min-width:900px){.hub-grid{grid-template-columns:repeat(4,1fr);}}
+.hub-card{display:flex;flex-direction:column;padding:20px 16px;border-radius:14px;text-decoration:none;border:1.5px solid transparent;transition:transform .15s,border-color .15s;}
+@media(min-width:600px){.hub-card{padding:24px 20px;}}
+.hub-card:hover{transform:translateY(-3px);}
+.hc-pro{background:#F2F7FC;border-color:#C8DCF0;}.hc-pro:hover{border-color:#1860AA;}
+.hc-org{background:#06101A;border-color:#1E3A52;}.hc-org:hover{border-color:#4DA8FF;}
+.hc-uni{background:#F0FAF4;border-color:#B8DFC4;}.hc-uni:hover{border-color:#27500A;}
+.hc-stu{background:#FFF8EE;border-color:#F5DEB0;}.hc-stu:hover{border-color:#854F0B;}
+.hub-icon{font-size:24px;margin-bottom:10px;}
+@media(min-width:600px){.hub-icon{font-size:28px;margin-bottom:12px;}}
+.hub-seg{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px;}
+.hc-pro .hub-seg{color:#1860AA;}.hc-org .hub-seg{color:#A8C0D4;}.hc-uni .hub-seg{color:#27500A;}.hc-stu .hub-seg{color:#854F0B;}
+.hub-title{font-size:14px;font-weight:900;margin-bottom:8px;line-height:1.3;}
+@media(min-width:600px){.hub-title{font-size:15px;}}
+.hc-pro .hub-title{color:#071A2E;}.hc-org .hub-title{color:#F5F9FF;}.hc-uni .hub-title{color:#071A2E;}.hc-stu .hub-title{color:#071A2E;}
+.hub-text{font-size:12px;font-weight:600;line-height:1.65;flex:1;margin-bottom:14px;}
+.hc-pro .hub-text{color:#1E3A54;}.hc-org .hub-text{color:#E0EAF4;}.hc-uni .hub-text{color:#1E3A54;}.hc-stu .hub-text{color:#1E3A54;}
+.hub-cta{font-size:12px;font-weight:900;display:flex;align-items:center;gap:5px;}
+.hc-pro .hub-cta{color:#1860AA;}.hc-org .hub-cta{color:#4DA8FF;}.hc-uni .hub-cta{color:#27500A;}.hc-stu .hub-cta{color:#854F0B;}
 
-.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
-@media (min-width: 900px) { .wrap { padding: 0 48px; } }
+/* ═══════════════════════════════════════════
+   IMAGE QUOTE SECTION
+═══════════════════════════════════════════ */
+.img-quote-section{position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;}
+@media(min-width:600px){.img-quote-section{min-height:420px;}}
+@media(min-width:900px){.img-quote-section{min-height:500px;}}
+.img-quote-bg{
+  position:absolute;inset:0;
+  /* Replace URL below with your own photo when ready */
+  background-image:url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1400&q=80');
+  background-size:cover;background-position:center 30%;
+}
+.img-quote-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(4,12,24,.90) 0%,rgba(10,26,48,.82) 60%,rgba(18,48,90,.75) 100%);}
+.img-quote-inner{position:relative;z-index:2;max-width:760px;margin:0 auto;padding:56px 24px;text-align:center;}
+@media(min-width:900px){.img-quote-inner{padding:88px 48px;}}
+.img-quote-eyebrow{font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#4DA8FF;margin-bottom:18px;}
+.img-quote-mark{font-size:44px;font-weight:900;color:#4DA8FF;line-height:.6;display:block;margin-bottom:12px;opacity:.7;font-family:Georgia,serif;}
+.img-quote-text{font-size:18px;font-weight:700;color:#F5F9FF;line-height:1.55;letter-spacing:-.01em;margin-bottom:18px;}
+@media(min-width:600px){.img-quote-text{font-size:22px;}}
+@media(min-width:900px){.img-quote-text{font-size:27px;}}
+.img-quote-sub{font-size:14px;font-weight:600;color:#A8C0D4;line-height:1.7;}
+.img-quote-line{width:40px;height:2px;background:#4DA8FF;margin:16px auto;}
 
-/* TOKENS */
-/* DARK bg #06101A/#0B1828/#0C1E30 | ON DARK: head #F5F9FF 900 body #E0EAF4 600 label #A8C0D4 700 */
-/* LIGHT bg #FFFFFF/#F2F7FC | ON LIGHT: head #071A2E 900 body #1E3A54 600 muted #4A6A88 */
-/* ACCENT interactive #1860AA | decorative #4DA8FF */
+/* ═══════════════════════════════════════════
+   WHO IS THIS FOR
+═══════════════════════════════════════════ */
+#for-whom{background:#F2F7FC;padding:56px 0;border-top:1px solid #C8DCF0;}
+.whom-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(min-width:800px){.whom-grid{grid-template-columns:repeat(4,1fr);}}
+.wc{background:#FFFFFF;border:1px solid #C8DCF0;border-radius:12px;padding:20px;}
+.wc-icon{font-size:24px;margin-bottom:10px;}
+.wc-title{font-size:14px;font-weight:900;color:#071A2E;margin-bottom:7px;}
+.wc-text{font-size:12px;font-weight:600;color:#1E3A54;line-height:1.65;}
 
-.ey-dk { font-size: 10px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #A8C0D4; margin-bottom: 10px; }
-.ey-lt { font-size: 10px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #1860AA; margin-bottom: 10px; }
-.h2-dk { font-size: 28px; font-weight: 900; color: #F5F9FF; line-height: 1.15; letter-spacing: -.03em; margin-bottom: 12px; }
-.h2-lt { font-size: 28px; font-weight: 900; color: #071A2E; line-height: 1.15; letter-spacing: -.03em; margin-bottom: 12px; }
-.body-dk { font-size: 15px; font-weight: 600; color: #E0EAF4; line-height: 1.75; }
-.body-lt { font-size: 15px; font-weight: 600; color: #1E3A54; line-height: 1.75; }
-@media (min-width: 900px) { .h2-dk, .h2-lt { font-size: 36px; } .body-dk, .body-lt { font-size: 16px; } }
+/* ═══════════════════════════════════════════
+   DARK BREAK (pattern only)
+═══════════════════════════════════════════ */
+.dark-break{background:#071422;padding:64px 0;position:relative;}
+.dark-break-pattern{position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,#0A1C2E 0,#0A1C2E 1px,transparent 0,transparent 50%);background-size:28px 28px;opacity:.4;}
+.dark-break-inner{position:relative;z-index:1;text-align:center;max-width:700px;margin:0 auto;padding:0 24px;}
+.dark-break-badge{display:inline-block;font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:20px;}
+.dark-break-h{font-size:22px;font-weight:900;color:#F5F9FF;line-height:1.35;letter-spacing:-.02em;margin-bottom:14px;}
+@media(min-width:600px){.dark-break-h{font-size:26px;}}
+.dark-break-p{font-size:14px;font-weight:600;color:#A8C0D4;line-height:1.75;}
 
+/* ═══════════════════════════════════════════
+   HOW IT WORKS
+═══════════════════════════════════════════ */
+#how{background:#0B1828;padding:56px 0;border-top:1px solid #162638;}
+.how-steps{display:grid;grid-template-columns:1fr;gap:0;position:relative;margin-top:32px;}
+@media(min-width:900px){.how-steps{grid-template-columns:repeat(5,1fr);}}
+.how-connector{display:none;}
+@media(min-width:900px){.how-connector{display:block;position:absolute;top:44px;left:9%;right:9%;height:1px;background:#1E3A52;z-index:0;}}
+.how-step{display:flex;flex-direction:row;align-items:flex-start;padding:16px 0;border-bottom:1px solid #162638;gap:18px;position:relative;z-index:1;}
+.how-step:last-child{border-bottom:none;}
+@media(min-width:900px){.how-step{flex-direction:column;align-items:center;text-align:center;padding:0 10px;border-bottom:none;gap:0;}}
+.hs-icon-wrap{width:52px;height:52px;border-radius:50%;background:#06101A;border:2px solid #1E3A52;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;}
+@media(min-width:900px){.hs-icon-wrap{width:80px;height:80px;margin-bottom:16px;}}
+.hs-icon{font-size:20px;}
+@media(min-width:900px){.hs-icon{font-size:28px;}}
+.hs-badge{position:absolute;top:-4px;right:-4px;width:20px;height:20px;border-radius:50%;background:#1860AA;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#F5F9FF;}
+.hs-content{flex:1;min-width:0;}
+.hs-title{font-size:13px;font-weight:900;color:#F5F9FF;margin-bottom:5px;line-height:1.3;}
+.hs-text{font-size:12px;font-weight:600;color:#E0EAF4;line-height:1.6;}
 
+/* ═══════════════════════════════════════════
+   PATHWAYS
+═══════════════════════════════════════════ */
+#pathways{background:#FFFFFF;padding:56px 0;border-top:1px solid #C8DCF0;}
+.tiles6{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:20px;}
+@media(min-width:500px){.tiles6{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:900px){.tiles6{grid-template-columns:repeat(6,1fr);}}
+.tile{background:#F2F7FC;border:1px solid #C8DCF0;border-radius:12px;padding:14px 10px;text-align:center;cursor:pointer;}
+.tile:hover{border-color:#1860AA;}
+.tile-ico{font-size:22px;margin-bottom:8px;display:block;}
+.tile-t{font-size:12px;font-weight:800;color:#071A2E;line-height:1.3;}
+.tile-s{font-size:10px;font-weight:600;color:#4A6A88;margin-top:3px;}
+.roles4{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
+@media(min-width:700px){.roles4{grid-template-columns:repeat(4,1fr);}}
+.rtile{background:#F2F7FC;border:1px solid #C8DCF0;border-radius:9px;padding:12px 14px;display:flex;align-items:center;gap:10px;}
+.r-dot{width:6px;height:6px;border-radius:50%;background:#1860AA;flex-shrink:0;}
+.r-txt{font-size:13px;font-weight:800;color:#071A2E;}
 
-/* ── HERO: DARK ── */
-#hero { background: #06101A; padding: 64px 0 52px; }
-.hero-grid { display: grid; grid-template-columns: 1fr; gap: 36px; }
-@media (min-width: 840px) { .hero-grid { grid-template-columns: 1fr 1fr; gap: 52px; align-items: center; } }
-.hero-ey { font-size: 10px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #F5F9FF; display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
-.hero-ey-line { height: 2px; width: 28px; background: #4DA8FF; flex-shrink: 0; }
-.hero-h1 { font-size: 28px; font-weight: 900; color: #F5F9FF; line-height: 1.12; letter-spacing: -.03em; margin-bottom: 16px; }
-.hero-h1 em { color: #4DA8FF; font-style: normal; }
-@media (min-width: 600px) { .hero-h1 { font-size: 36px; } }
-@media (min-width: 900px) { .hero-h1 { font-size: 44px; } }
-.hero-sub { font-size: 15px; font-weight: 600; color: #E0EAF4; line-height: 1.8; margin-bottom: 22px; }
-.hero-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
-.h-pill { font-size: 11px; font-weight: 800; padding: 5px 13px; border-radius: 20px; background: #0C2040; color: #F5F9FF; border: 1px solid #1E3A58; white-space: nowrap; }
-/* DUAL CTA */
-.hero-dual-cta { display: flex; gap: 12px; flex-wrap: wrap; }
-.dual-cta-p { font-size: 14px; font-weight: 800; padding: 13px 26px; border-radius: 7px; background: #1860AA; color: #F5F9FF; border: 2px solid #1860AA; text-decoration: none; display: inline-block; white-space: nowrap; cursor: pointer; }
-.dual-cta-s { font-size: 14px; font-weight: 800; padding: 13px 26px; border-radius: 7px; background: transparent; color: #F5F9FF; border: 2px solid #A8C0D4; text-decoration: none; display: inline-block; white-space: nowrap; cursor: pointer; }
-.cta-label { font-size: 10px; font-weight: 700; color: #A8C0D4; margin-top: 6px; }
+/* ═══════════════════════════════════════════
+   PROGRAMMES
+═══════════════════════════════════════════ */
+#programmes{background:#F2F7FC;padding:56px 0;border-top:1px solid #C8DCF0;}
+.prog-group{margin-bottom:40px;}
+.prog-group-label{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#1860AA;margin-bottom:4px;}
+.prog-group-title{font-size:20px;font-weight:900;color:#071A2E;margin-bottom:20px;}
+@media(min-width:600px){.prog-group-title{font-size:24px;}}
+.prog-grid,.prog3{display:grid;grid-template-columns:1fr;gap:14px;}
+@media(min-width:600px){.prog-grid{grid-template-columns:1fr 1fr;}.prog3{grid-template-columns:1fr 1fr;}}
+@media(min-width:900px){.prog-grid{grid-template-columns:repeat(3,1fr);}.prog3{grid-template-columns:repeat(3,1fr);}}
+.prog-card{background:#FFFFFF;border:1px solid #C8DCF0;border-radius:12px;padding:20px;display:flex;flex-direction:column;}
+.prog-card-featured{background:#06101A;border:1px solid #1E3A52;border-radius:16px;margin-bottom:16px;overflow:clip;}
+.pcf-header{display:grid;grid-template-columns:1fr;}
+@media(min-width:640px){.pcf-header{grid-template-columns:1fr auto;}}
+.pcf-main{padding:24px 24px 0;}
+@media(min-width:640px){.pcf-main{padding:28px 0 28px 28px;}}
+.pcf-badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;}
+.pcf-title{font-size:20px;font-weight:900;color:#F5F9FF;margin-bottom:8px;line-height:1.2;}
+.pcf-sidebar{background:#F8FBFF;border-top:1px solid #C8DCF0;padding:24px;display:flex;flex-direction:column;gap:14px;}
+@media(min-width:640px){.pcf-sidebar{border-top:none;border-left:1px solid #C8DCF0;min-width:240px;}}
+.sd-row{display:flex;flex-direction:column;gap:2px;padding-bottom:12px;border-bottom:1px solid #C8DCF0;}
+.sd-row:last-child{border-bottom:none;padding-bottom:0;}
+.sd-label{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1860AA;}
+.sd-val{font-size:14px;font-weight:900;color:#071A2E;}
+.sd-sub{font-size:11px;font-weight:600;color:#4A6A88;}
+.sd-price{font-size:22px;font-weight:900;color:#071A2E;}
+.sd-price-note{font-size:11px;font-weight:600;color:#4A6A88;margin-top:2px;}
+.pc-tag{font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#1860AA;margin-bottom:8px;}
+.pc-title{font-size:15px;font-weight:900;color:#071A2E;margin-bottom:8px;}
+.pc-desc{font-size:12px;font-weight:600;color:#1E3A54;line-height:1.65;margin-bottom:12px;flex:1;}
+.pc-pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;}
+.pc-pill{font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;background:#F2F7FC;color:#1E3A54;border:1px solid #C8DCF0;}
+.pc-foot{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid #EEF4FA;}
+.pc-meta{font-size:11px;font-weight:600;color:#6A8CA8;}
+.pc-btn{font-size:12px;font-weight:800;color:#1860AA;background:none;border:none;cursor:pointer;padding:0;}
+.prog-dual-cta{margin-top:16px;display:flex;flex-direction:column;gap:6px;}
+.prog-cta-p{font-size:14px;font-weight:800;padding:12px 22px;border-radius:7px;background:#1860AA;color:#FFF;border:none;cursor:pointer;text-align:center;}
+.prog-cta-s{font-size:13px;font-weight:700;padding:11px 20px;border-radius:7px;background:transparent;color:#1860AA;border:2px solid #1860AA;cursor:pointer;text-align:left;}
+.prog-cta-label{font-size:11px;font-weight:600;color:#6A8CA8;}
+.prog-divider{height:1px;background:#C8DCF0;margin:32px 0;}
+.pc-enrol-btn{font-size:14px;font-weight:800;padding:12px 20px;border-radius:7px;background:#1860AA;color:#FFF;border:none;cursor:pointer;width:100%;margin-bottom:8px;}
+.pc-brochure-btn{font-size:13px;font-weight:700;padding:10px 20px;border-radius:7px;background:transparent;color:#1860AA;border:2px solid #1860AA;cursor:pointer;width:100%;}
+.pc-view-full{font-size:12px;font-weight:700;color:#4DA8FF;text-decoration:none;display:inline-block;margin-top:10px;}
+.pc-badge{font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:4px;border:1px solid;}
+.pc-badge-flagship{background:#1860AA;color:#FFF;border-color:#1860AA;}
+.pc-badge-stack{background:#0C2040;color:#4DA8FF;border-color:#1E3A52;}
+.pc-badge-soon{background:#7A3A00;color:#FFB84D;border-color:#7A3A00;}
+.pcf-body-pills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.pcf-pill{font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;background:#0C2040;color:#A8C0D4;border:1px solid #1E3A52;}
+.pcf-who-label{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#A8C0D4;margin-bottom:8px;}
+.pcf-who-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.pcf-who-tag{font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;background:transparent;color:#A8C0D4;border:1px solid #1E3A52;}
+.pcf-topics-label{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#A8C0D4;margin-bottom:8px;}
+.pcf-topic-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
+.pcf-topic-tag{font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;background:transparent;color:#A8C0D4;border:1px solid #1E3A52;}
+.pcf-brochure{font-size:12px;font-weight:700;color:#4DA8FF;text-decoration:none;}
 
-.hero-card { background: #FFFFFF; border: 1px solid #C8DCF0; border-radius: 14px; padding: 24px; box-shadow: 0 4px 24px rgba(0,0,0,.25); }
-.hc-badge { font-size: 10px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; background: #1860AA; color: #FFFFFF; padding: 5px 12px; border-radius: 4px; display: inline-block; margin-bottom: 14px; }
-.hc-label { font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #4A6A88; margin-bottom: 12px; }
-.hc-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid #E0EAF4; }
-.hc-row:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
-.hc-n { font-size: 20px; font-weight: 900; color: #1860AA; min-width: 28px; line-height: 1; flex-shrink: 0; }
-.hc-title { font-size: 13px; font-weight: 800; color: #071A2E; margin-bottom: 4px; }
-.hc-text { font-size: 12px; font-weight: 600; color: #1E3A54; line-height: 1.65; }
-/* ── SEGMENT HUB: LIGHT — immediately after hero ── */
-#segment-hub { background: #FFFFFF; padding: 64px 0; border-top: 1px solid #C8DCF0; }
-.hub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-@media (min-width: 900px) { .hub-grid { grid-template-columns: repeat(4, 1fr); } }
-.hub-card { display: flex; flex-direction: column; padding: 24px 20px; border-radius: 14px; text-decoration: none; border: 1.5px solid transparent; transition: transform .15s, border-color .15s; }
-.hub-card:hover { transform: translateY(-3px); }
-.hc-pro { background: #F2F7FC; border-color: #C8DCF0; }
-.hc-pro:hover { border-color: #1860AA; }
-.hc-org { background: #06101A; border-color: #1E3A52; }
-.hc-org:hover { border-color: #4DA8FF; }
-.hc-uni { background: #F0FAF4; border-color: #B8DFC4; }
-.hc-uni:hover { border-color: #27500A; }
-.hc-stu { background: #FFF8EE; border-color: #F5DEB0; }
-.hc-stu:hover { border-color: #854F0B; }
-.hub-icon { font-size: 28px; margin-bottom: 12px; }
-.hub-seg { font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 7px; }
-.hc-pro .hub-seg { color: #1860AA; }
-.hc-org .hub-seg { color: #A8C0D4; }
-.hc-uni .hub-seg { color: #27500A; }
-.hc-stu .hub-seg { color: #854F0B; }
-.hub-title { font-size: 15px; font-weight: 900; margin-bottom: 8px; line-height: 1.3; }
-.hc-pro .hub-title { color: #071A2E; }
-.hc-org .hub-title { color: #F5F9FF; }
-.hc-uni .hub-title { color: #071A2E; }
-.hc-stu .hub-title { color: #071A2E; }
-.hub-text { font-size: 12px; font-weight: 600; line-height: 1.65; flex: 1; margin-bottom: 16px; }
-.hc-pro .hub-text { color: #1E3A54; }
-.hc-org .hub-text { color: #E0EAF4; }
-.hc-uni .hub-text { color: #1E3A54; }
-.hc-stu .hub-text { color: #1E3A54; }
-.hub-cta { font-size: 12px; font-weight: 900; display: flex; align-items: center; gap: 5px; }
-.hc-pro .hub-cta { color: #1860AA; }
-.hc-org .hub-cta { color: #4DA8FF; }
-.hc-uni .hub-cta { color: #27500A; }
-.hc-stu .hub-cta { color: #854F0B; }
+/* ═══════════════════════════════════════════
+   FACULTY
+═══════════════════════════════════════════ */
+#faculty{background:#06101A;padding:56px 0;border-top:1px solid #162638;}
+.fac-scroll-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:16px;}
+.fac-grid-inner{display:flex;gap:14px;min-width:max-content;}
+.fc{background:#0B1828;border:1px solid #1E3A52;border-radius:14px;overflow:clip;width:220px;flex-shrink:0;}
+@media(min-width:600px){.fc{width:260px;}}
+.fc-ph{opacity:.35;}
+.fc-photo{height:100px;display:flex;align-items:flex-end;justify-content:flex-start;padding:10px;}
+.fc-ph .fc-photo{background:#06101A;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#162638;}
+.fc-photo-tag{font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;background:#06101A;color:#4DA8FF;padding:3px 8px;border-radius:4px;}
+.fc-body{padding:14px;}
+.fc-name{font-size:14px;font-weight:900;color:#F5F9FF;margin-bottom:3px;}
+.fc-spec{font-size:11px;font-weight:600;color:#4DA8FF;margin-bottom:8px;}
+.fc-bio{font-size:11px;font-weight:600;color:#A8C0D4;line-height:1.6;margin-bottom:10px;}
+.fc-exp{font-size:10px;font-weight:800;padding:3px 9px;border-radius:20px;background:#0C2040;color:#A8C0D4;border:1px solid #1E3A52;}
+.fac-cta{margin-top:24px;}
+.fac-cta-btn{font-size:13px;font-weight:800;color:#4DA8FF;background:none;border:1px solid #1E3A52;border-radius:7px;padding:10px 20px;cursor:pointer;}
 
-/* ── WHO IS THIS FOR: LIGHT ── */
-#for-whom { background: #F2F7FC; padding: 64px 0; border-top: 1px solid #C8DCF0; }
-.whom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-@media (min-width: 800px) { .whom-grid { grid-template-columns: repeat(4, 1fr); } }
-.wc { background: #FFFFFF; border: 1px solid #C8DCF0; border-radius: 12px; padding: 22px; }
-.wc-icon { font-size: 26px; margin-bottom: 12px; }
-.wc-title { font-size: 14px; font-weight: 900; color: #071A2E; margin-bottom: 7px; }
-.wc-text { font-size: 12px; font-weight: 600; color: #1E3A54; line-height: 1.65; }
+/* ═══════════════════════════════════════════
+   SOCIAL / INSIGHTS
+═══════════════════════════════════════════ */
+#social{background:#06101A;padding:56px 0;border-top:1px solid #162638;}
+.social2{display:grid;grid-template-columns:1fr;gap:24px;}
+@media(min-width:700px){.social2{grid-template-columns:1fr 1fr;}}
+.soc-col-lbl{font-size:12px;font-weight:800;color:#A8C0D4;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.soc-ico{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;flex-shrink:0;}
+.li-ico{background:#0A66C2;color:#FFF;}
+.pod-ico{background:#1E3A52;color:#4DA8FF;}
+.soc-post{background:#0B1828;border:1px solid #1E3A52;border-radius:12px;padding:16px;margin-bottom:12px;}
+.sp-hdr{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.sp-av{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0;}
+.sp-name{font-size:13px;font-weight:800;color:#F5F9FF;}
+.sp-role{font-size:11px;font-weight:600;color:#A8C0D4;}
+.sp-text{font-size:13px;font-weight:600;color:#E0EAF4;line-height:1.65;margin-bottom:12px;}
+.sp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+.sp-tags span{font-size:10px;font-weight:700;color:#4DA8FF;}
+.sp-foot{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:600;color:#4A6A88;}
+.sp-link{color:#4DA8FF;text-decoration:none;font-weight:700;}
+.pod-ep{display:flex;align-items:center;gap:12px;background:#0B1828;border:1px solid #1E3A52;border-radius:10px;padding:12px;margin-bottom:10px;}
+.pod-thumb{width:48px;height:48px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:#A8C0D4;}
+.pod-info{flex:1;min-width:0;}
+.pod-show{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#4DA8FF;margin-bottom:3px;}
+.pod-title{font-size:12px;font-weight:700;color:#F5F9FF;line-height:1.4;margin-bottom:4px;}
+.pod-meta{display:flex;gap:10px;font-size:10px;font-weight:600;color:#4A6A88;}
+.pod-play{background:#1860AA;border:none;border-radius:50%;width:32px;height:32px;color:#FFF;font-size:12px;cursor:pointer;flex-shrink:0;}
 
-/* ── IMAGE BREAK ── */
-.img-break { padding: 64px 24px; text-align: center; position: relative; overflow:clip; }
-@media (min-width: 900px) { .img-break { padding: 88px 48px; } }
-.break-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
-.break-pattern { position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, #0A1C2E 0, #0A1C2E 1px, transparent 0, transparent 50%); background-size: 32px 32px; opacity: .45; }
-.break-label { font-size: 10px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: #4DA8FF; margin-bottom: 14px; }
-.break-h { font-size: 22px; font-weight: 900; color: #F5F9FF; line-height: 1.3; letter-spacing: -.02em; margin-bottom: 14px; }
-@media (min-width: 600px) { .break-h { font-size: 28px; } }
-.break-sub { font-size: 15px; font-weight: 600; color: #E0EAF4; line-height: 1.75; }
+/* ═══════════════════════════════════════════
+   CTA DUAL
+═══════════════════════════════════════════ */
+#cta{background:#FFFFFF;padding:56px 0;border-top:1px solid #C8DCF0;}
+.cta-dual-grid{display:grid;grid-template-columns:1fr;gap:20px;}
+@media(min-width:700px){.cta-dual-grid{grid-template-columns:1fr 1fr;}}
+.cta-b2c{background:#06101A;border:1px solid #1E3A52;border-radius:16px;padding:28px;}
+.cta-b2b{background:#F2F7FC;border:1px solid #C8DCF0;border-radius:16px;padding:28px;}
+.cta-panel-eyebrow{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#4DA8FF;margin-bottom:10px;}
+.cta-b2b .cta-panel-eyebrow{color:#1860AA;}
+.cta-panel-h{font-size:20px;font-weight:900;color:#F5F9FF;line-height:1.25;margin-bottom:14px;}
+.cta-b2b .cta-panel-h{color:#071A2E;}
+.cta-founding-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+.fb{font-size:10px;font-weight:800;padding:4px 10px;border-radius:20px;background:#0C2040;color:#A8C0D4;border:1px solid #1E3A52;}
+.cta-panel-p{font-size:13px;font-weight:600;color:#A8C0D4;line-height:1.7;margin-bottom:20px;}
+.cta-b2b .cta-panel-p{color:#1E3A54;}
+.cta-panel-btn-p{display:block;font-size:14px;font-weight:800;padding:13px;border-radius:7px;background:#1860AA;color:#FFF;border:none;cursor:pointer;width:100%;margin-bottom:10px;text-align:center;}
+.cta-panel-btn-s{display:block;font-size:13px;font-weight:700;padding:11px;border-radius:7px;background:transparent;color:#A8C0D4;border:1px solid #1E3A52;cursor:pointer;width:100%;margin-bottom:12px;text-align:center;}
+.cta-b2b .cta-panel-btn-s{color:#1860AA;border-color:#1860AA;}
+.cta-panel-note{font-size:11px;font-weight:600;color:#4A6A88;text-align:center;}
 
-/* ── HOW IT WORKS: DARK ── */
-#how { background: #0B1828; padding: 64px 0; border-top: 1px solid #162638; }
-.how-steps { display: grid; grid-template-columns: 1fr; gap: 0; position: relative; margin-top: 36px; }
-@media (min-width: 900px) { .how-steps { grid-template-columns: repeat(5, 1fr); } }
-.how-connector { display: none; }
-@media (min-width: 900px) { .how-connector { display: block; position: absolute; top: 44px; left: 9%; right: 9%; height: 1px; background: #1E3A52; z-index: 0; } }
-.how-step { display: flex; flex-direction: row; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #162638; gap: 18px; position: relative; z-index: 1; }
-.how-step:last-child { border-bottom: none; }
-@media (min-width: 900px) { .how-step { flex-direction: column; align-items: center; text-align: center; padding: 0 10px; border-bottom: none; gap: 0; } }
-.hs-icon-wrap { width: 56px; height: 56px; border-radius: 50%; background: #06101A; border: 2px solid #1E3A52; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; }
-@media (min-width: 900px) { .hs-icon-wrap { width: 80px; height: 80px; margin-bottom: 16px; } }
-.hs-icon { font-size: 22px; }
-@media (min-width: 900px) { .hs-icon { font-size: 28px; } }
-.hs-badge { position: absolute; top: -4px; right: -4px; width: 20px; height: 20px; border-radius: 50%; background: #1860AA; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 900; color: #F5F9FF; }
-.hs-content { flex: 1; }
-.hs-title { font-size: 13px; font-weight: 900; color: #F5F9FF; margin-bottom: 5px; line-height: 1.3; }
-.hs-text { font-size: 12px; font-weight: 600; color: #E0EAF4; line-height: 1.6; }
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+footer{background:#06101A;padding:48px 0 24px;border-top:1px solid #162638;}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px;}
+@media(min-width:700px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr;}}
+.foot-brand{font-size:20px;font-weight:900;color:#F5F9FF;letter-spacing:-.02em;margin-bottom:10px;}
+.foot-brand em{color:#4DA8FF;font-style:normal;}
+.foot-tag{font-size:12px;font-weight:600;color:#4A6A88;line-height:1.65;margin-bottom:16px;}
+.soc-row{display:flex;gap:8px;flex-wrap:wrap;}
+.si{width:32px;height:32px;border-radius:6px;display:flex;align-items:center;justify-content:center;border:1px solid #1E3A52;text-decoration:none;font-weight:900;}
+.foot-col-h{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#4A6A88;margin-bottom:12px;}
+.foot-link{display:block;font-size:12px;font-weight:600;color:#6A8CA8;text-decoration:none;margin-bottom:8px;}
+.foot-link:hover{color:#A8C0D4;}
+.foot-bot{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;padding-top:20px;border-top:1px solid #162638;}
+.foot-legal{font-size:11px;font-weight:600;}
 
-/* ── PATHWAYS: LIGHT ── */
-#pathways { background: #FFFFFF; padding: 64px 0; border-top: 1px solid #C8DCF0; }
-.tiles6 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px; }
-@media (min-width: 500px) { .tiles6 { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 900px) { .tiles6 { grid-template-columns: repeat(6, 1fr); } }
-.tile { background: #F2F7FC; border: 1px solid #C8DCF0; border-radius: 12px; padding: 16px 10px; text-align: center; cursor: pointer; }
-.tile:hover { border-color: #1860AA; }
-.tile-ico { font-size: 22px; margin-bottom: 8px; display: block; }
-.tile-t { font-size: 12px; font-weight: 800; color: #071A2E; line-height: 1.3; }
-.tile-s { font-size: 10px; font-weight: 600; color: #4A6A88; margin-top: 3px; }
-.roles4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
-@media (min-width: 700px) { .roles4 { grid-template-columns: repeat(4, 1fr); } }
-.rtile { background: #F2F7FC; border: 1px solid #C8DCF0; border-radius: 9px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; }
-.rtile:hover { border-color: #1860AA; }
-.r-dot { width: 6px; height: 6px; border-radius: 50%; background: #1860AA; flex-shrink: 0; }
-.r-txt { font-size: 13px; font-weight: 800; color: #071A2E; }
-
-/* ── PROGRAMMES — GROUPED: LIGHT ── */
-#programmes { background: #F2F7FC; padding: 64px 0; border-top: 1px solid #C8DCF0; }
-.prog-group { margin-bottom: 40px; }
-.prog-group:last-child { margin-bottom: 0; }
-.prog-group-label { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #1860AA; margin-bottom: 4px; }
-.prog-group-title { font-size: 18px; font-weight: 900; color: #071A2E; margin-bottom: 14px; }
-.prog-divider { height: 1px; background: #C8DCF0; margin-bottom: 40px; }
-
-/* Featured dark card for flagship */
-.prog-feat { background: #06101A; border: 1px solid #1E3A52; border-radius: 14px; padding: 28px; display: grid; grid-template-columns: 1fr; gap: 20px; }
-@media (min-width: 768px) { .prog-feat { grid-template-columns: 1fr auto; gap: 28px; align-items: start; } }
-.pf-tag { font-size: 10px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: #A8C0D4; margin-bottom: 8px; }
-.pf-title { font-size: 20px; font-weight: 900; color: #F5F9FF; margin-bottom: 8px; }
-.pf-desc { font-size: 13px; font-weight: 600; color: #E0EAF4; line-height: 1.75; margin-bottom: 14px; }
-.pf-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
-.pf-pill { font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; background: #0A2040; color: #F5F9FF; border: 1px solid #1A3A60; white-space: nowrap; }
-.pf-build { background: #0C1E30; border: 1px solid #1C3450; border-radius: 10px; padding: 16px; }
-.pf-bl { font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #A8C0D4; margin-bottom: 10px; }
-.pf-bi { font-size: 13px; font-weight: 800; color: #F5F9FF; display: flex; align-items: flex-start; gap: 10px; margin-bottom: 7px; }
-.pf-bi:last-child { margin-bottom: 0; }
-.pf-bi-dot { width: 6px; height: 6px; border-radius: 50%; background: #4DA8FF; flex-shrink: 0; margin-top: 5px; }
-.pf-mods { background: #0B1828; border: 1px solid #1E3A52; border-radius: 10px; padding: 18px; width: 100%; }
-@media (min-width: 768px) { .pf-mods { width: 200px; flex-shrink: 0; } }
-.pf-ml { font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #A8C0D4; margin-bottom: 10px; }
-.pf-m { font-size: 12px; font-weight: 700; color: #E0EAF4; padding: 6px 0; border-bottom: 1px solid #162638; display: flex; gap: 8px; }
-.pf-m:last-child { border-bottom: none; }
-.pf-mn { color: #A8C0D4; font-weight: 900; min-width: 34px; flex-shrink: 0; }
-.pf-cap { color: #3DB890; }
-.pf-cap .pf-mn { color: #3DB890; }
-
-/* Light cards for other programme groups */
-.prog3 { display: grid; grid-template-columns: 1fr; gap: 10px; }
-@media (min-width: 700px) { .prog3 { grid-template-columns: repeat(3, 1fr); } }
-.prog-card { background: #FFFFFF; border: 1px solid #C8DCF0; border-radius: 12px; padding: 22px; }
-.pc-tag { font-size: 10px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; color: #1860AA; margin-bottom: 7px; }
-.pc-title { font-size: 15px; font-weight: 900; color: #071A2E; margin-bottom: 7px; }
-.pc-desc { font-size: 13px; font-weight: 600; color: #1E3A54; line-height: 1.65; margin-bottom: 12px; }
-.pc-pills { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 12px; }
-.pc-pill { font-size: 10px; font-weight: 800; padding: 2px 9px; border-radius: 20px; background: #E6F1FB; color: #0A3A6A; }
-.pc-foot { display: flex; align-items: center; justify-content: space-between; padding-top: 10px; border-top: 1px solid #EEF4FA; }
-.pc-meta { font-size: 11px; font-weight: 600; color: #6A8CA8; }
-.pc-btn { font-size: 11px; font-weight: 900; color: #1860AA; cursor: pointer; background: none; border: none; }
-
-/* Programmes dual CTA row */
-.prog-dual-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; align-items: center; }
-.prog-cta-p { font-size: 14px; font-weight: 800; padding: 12px 24px; border-radius: 7px; background: #1860AA; color: #FFFFFF; border: none; cursor: pointer; }
-.prog-cta-s { font-size: 14px; font-weight: 800; padding: 12px 24px; border-radius: 7px; background: transparent; color: #1860AA; border: 2px solid #1860AA; cursor: pointer; }
-.prog-cta-label { font-size: 11px; font-weight: 600; color: #6A8CA8; }
-
-/* ── FACULTY: DARK ── */
-#faculty { background: #06101A; padding: 64px 0; border-top: 1px solid #162638; }
-.fac-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-@media (min-width: 900px) { .fac-grid { grid-template-columns: repeat(4, 1fr); gap: 14px; } }
-.fc { background: #0B1828; border: 1px solid #1E3A52; border-radius: 14px; overflow: clip; }
-.fc-photo { height: 100px; display: flex; align-items: flex-end; justify-content: flex-start; padding: 10px; }
-@media (min-width: 600px) { .fc-photo { height: 120px; } }
-.fc-photo-tag { font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; background: rgba(6,16,26,.85); color: #E0EAF4; padding: 3px 7px; border-radius: 4px; }
-.fc-body { padding: 14px; }
-.fc-name { font-size: 14px; font-weight: 900; color: #F5F9FF; margin-bottom: 3px; }
-.fc-spec { font-size: 11px; font-weight: 800; color: #A8C0D4; margin-bottom: 7px; }
-.fc-bio { font-size: 11px; font-weight: 600; color: #E0EAF4; line-height: 1.6; margin-bottom: 8px; }
-.fc-exp { font-size: 11px; font-weight: 800; padding: 3px 9px; border-radius: 20px; background: #0C1E30; color: #F5F9FF; border: 1px solid #1E3A52; display: inline-block; }
-.fc-ph { border-style: dashed; opacity: .2; }
-.fc-ph .fc-photo { background: #06101A; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #162638; }
-.fac-cta { text-align: center; margin-top: 22px; }
-.fac-cta-btn { font-size: 14px; font-weight: 800; padding: 12px 28px; border-radius: 7px; border: 1px solid #1E3A52; color: #E0EAF4; background: transparent; cursor: pointer; }
-
-/* ── INDUSTRY: LIGHT ── */
-#industry { background: #F2F7FC; padding: 64px 0; border-top: 1px solid #C8DCF0; }
-.ind-layout { display: grid; grid-template-columns: 1fr; gap: 16px; }
-@media (min-width: 800px) { .ind-layout { grid-template-columns: 1fr 1fr; } }
-.emp4 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
-.emp-c { background: #FFFFFF; border: 1px solid #C8DCF0; border-radius: 10px; padding: 14px; }
-.ec-n { font-size: 22px; font-weight: 900; color: #071A2E; }
-.ec-l { font-size: 12px; font-weight: 600; color: #1E3A54; margin-top: 5px; line-height: 1.4; }
-.size3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; }
-.sz-c { background: #FFFFFF; border: 1px solid #C8DCF0; border-radius: 8px; padding: 12px; text-align: center; }
-.sz-n { font-size: 20px; font-weight: 900; color: #071A2E; }
-.sz-l { font-size: 10px; font-weight: 700; color: #4A6A88; margin-top: 4px; line-height: 1.4; }
-.cross8 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; margin-bottom: 16px; }
-@media (min-width: 500px) { .cross8 { grid-template-columns: repeat(4, 1fr); } }
-.ct { background: #FFFFFF; border: 1px solid #C8DCF0; border-radius: 7px; padding: 10px; font-size: 12px; font-weight: 800; color: #1E3A54; text-align: center; }
-.alum-bar { background: #071A2E; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 14px; }
-@media (min-width: 600px) { .alum-bar { flex-direction: row; align-items: center; justify-content: space-between; } }
-.ab-title { font-size: 14px; font-weight: 900; color: #F5F9FF; margin-bottom: 4px; }
-.ab-sub { font-size: 13px; font-weight: 600; color: #E0EAF4; }
-.ab-btn { font-size: 13px; font-weight: 900; padding: 10px 20px; border-radius: 7px; background: #1860AA; color: #F5F9FF; border: none; cursor: pointer; white-space: nowrap; align-self: flex-start; }
-@media (min-width: 600px) { .ab-btn { align-self: auto; } }
-.mkt { background: #071A2E; border-radius: 12px; padding: 20px; }
-.mkt-lbl { font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #A8C0D4; margin-bottom: 10px; }
-.mkt-n { font-size: 30px; font-weight: 900; color: #F5F9FF; line-height: 1; }
-.mkt-u { font-size: 12px; font-weight: 700; color: #4DA8FF; margin: 6px 0 10px; }
-.mkt-note { font-size: 13px; font-weight: 600; color: #E0EAF4; line-height: 1.65; }
-
-/* ── SOCIAL: DARK ── */
-#social { background: #06101A; padding: 64px 0; border-top: 1px solid #162638; }
-.social2 { display: grid; grid-template-columns: 1fr; gap: 20px; }
-@media (min-width: 768px) { .social2 { grid-template-columns: 1fr 1fr; } }
-.soc-col-lbl { font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #A8C0D4; margin-bottom: 14px; display: flex; align-items: center; gap: 9px; }
-.soc-ico { width: 22px; height: 22px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 900; flex-shrink: 0; }
-.li-ico { background: #0A66C2; color: #F5F9FF; }
-.pod-ico { background: #6940A5; color: #F5F9FF; }
-.soc-post { background: #0B1828; border: 1px solid #1E3A52; border-radius: 12px; padding: 18px; margin-bottom: 10px; }
-.sp-hdr { display: flex; align-items: center; gap: 11px; margin-bottom: 10px; }
-.sp-av { width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 900; }
-.sp-name { font-size: 13px; font-weight: 900; color: #F5F9FF; }
-.sp-role { font-size: 11px; font-weight: 600; color: #A8C0D4; }
-.sp-text { font-size: 13px; font-weight: 600; color: #E0EAF4; line-height: 1.75; margin-bottom: 10px; }
-.sp-tags span { font-size: 11px; font-weight: 700; color: #4DA8FF; margin-right: 7px; }
-.sp-foot { font-size: 11px; font-weight: 700; color: #4A6A88; padding-top: 9px; border-top: 1px solid #162638; display: flex; justify-content: space-between; }
-.sp-link { color: #A8C0D4; cursor: pointer; text-decoration: none; }
-.pod-ep { background: #0B1828; border: 1px solid #1E3A52; border-radius: 12px; padding: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
-.pod-thumb { width: 52px; height: 52px; border-radius: 10px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 900; color: #F5F9FF; line-height: 1.3; text-align: center; }
-.pod-info { flex: 1; min-width: 0; }
-.pod-show { font-size: 10px; font-weight: 700; color: #A8C0D4; margin-bottom: 3px; }
-.pod-title { font-size: 13px; font-weight: 800; color: #F5F9FF; margin-bottom: 4px; line-height: 1.35; }
-.pod-meta { font-size: 11px; font-weight: 700; color: #4A6A88; display: flex; gap: 10px; }
-.pod-play { width: 36px; height: 36px; border-radius: 50%; background: #1860AA; border: none; font-size: 11px; color: #F5F9FF; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-weight: 900; }
-.pod-more { text-align: center; margin-top: 8px; font-size: 13px; font-weight: 800; color: #A8C0D4; cursor: pointer; }
-
-/* ── CTA DUAL: LIGHT ── */
-#cta { background: #FFFFFF; padding: 64px 0; border-top: 1px solid #C8DCF0; }
-.cta-dual-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-@media (min-width: 768px) { .cta-dual-grid { grid-template-columns: 1fr 1fr; } }
-/* B2C panel */
-.cta-b2c { background: #F2F7FC; border: 1px solid #C8DCF0; border-radius: 14px; padding: 32px; }
-.cta-b2b { background: #06101A; border: 1px solid #1E3A52; border-radius: 14px; padding: 32px; }
-.cta-panel-eyebrow { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 10px; }
-.cta-b2c .cta-panel-eyebrow { color: #1860AA; }
-.cta-b2b .cta-panel-eyebrow { color: #A8C0D4; }
-.cta-panel-h { font-size: 20px; font-weight: 900; margin-bottom: 10px; line-height: 1.25; }
-.cta-b2c .cta-panel-h { color: #071A2E; }
-.cta-b2b .cta-panel-h { color: #F5F9FF; }
-.cta-founding-badges { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 12px; }
-.fb { font-size: 11px; font-weight: 800; padding: 4px 11px; border-radius: 20px; background: #E6F1FB; color: #0A3A6A; white-space: nowrap; }
-.cta-panel-p { font-size: 13px; font-weight: 600; line-height: 1.8; margin-bottom: 20px; }
-.cta-b2c .cta-panel-p { color: #1E3A54; }
-.cta-b2b .cta-panel-p { color: #E0EAF4; }
-.cta-panel-btn-p { font-size: 14px; font-weight: 800; padding: 12px 24px; border-radius: 7px; background: #1860AA; color: #FFFFFF; border: none; cursor: pointer; width: 100%; margin-bottom: 8px; }
-.cta-panel-btn-s { font-size: 14px; font-weight: 800; padding: 12px 24px; border-radius: 7px; background: transparent; border: 2px solid #1860AA; cursor: pointer; width: 100%; }
-.cta-b2c .cta-panel-btn-s { color: #1860AA; }
-.cta-b2b .cta-panel-btn-s { color: #F5F9FF; border-color: #2A4A6A; }
-.cta-panel-note { font-size: 11px; font-weight: 600; text-align: center; margin-top: 10px; }
-.cta-b2c .cta-panel-note { color: #6A8CA8; }
-.cta-b2b .cta-panel-note { color: #4A6A88; }
-
-/* ── FOOTER ── */
-footer { background: #06101A; padding: 48px 0 24px; border-top: 1px solid #162638; }
-.foot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
-@media (min-width: 768px) { .foot-grid { grid-template-columns: 2fr 1fr 1fr 1fr; } }
-.foot-brand { font-size: 19px; font-weight: 900; color: #F5F9FF; margin-bottom: 10px; }
-.foot-brand em { color: #4DA8FF; font-style: normal; }
-.foot-tag { font-size: 13px; font-weight: 600; color: #A8C0D4; line-height: 1.75; }
-.foot-col-h { font-size: 12px; font-weight: 900; color: #F5F9FF; margin-bottom: 12px; }
-.foot-link { font-size: 13px; font-weight: 600; color: #A8C0D4; display: block; margin-bottom: 8px; text-decoration: none; }
-.foot-bot { display: flex; flex-direction: column; gap: 6px; padding-top: 18px; border-top: 1px solid #162638; }
-@media (min-width: 600px) { .foot-bot { flex-direction: row; align-items: center; justify-content: space-between; } }
-.foot-legal { font-size: 11px; font-weight: 600; color: #2A4060; }
-.soc-row { display: flex; gap: 8px; margin-top: 16px; }
-.si { width: 32px; height: 32px; border-radius: 7px; border: 1px solid #1E3A52; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 900; color: #A8C0D4; text-decoration: none; }
-
-.fac-scroll-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 12px; }
-.fac-scroll-wrap::-webkit-scrollbar { height: 4px; }
-.fac-scroll-wrap::-webkit-scrollbar-track { background: #0B1828; }
-.fac-scroll-wrap::-webkit-scrollbar-thumb { background: #1E3A52; border-radius: 2px; }
-.fac-grid-inner { display: grid; grid-template-columns: repeat(8, 220px); gap: 12px; width: max-content; }
-@media (min-width: 900px) { .fac-grid-inner { grid-template-columns: repeat(4, 1fr); width: 100%; } }
-@media (min-width: 1200px) { .fac-grid-inner { grid-template-columns: repeat(4, 1fr); } }
-
-/* ── TALK TO US POPUP ── */
-#talk-popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9000;align-items:center;justify-content:center;padding:20px;}
+/* ═══════════════════════════════════════════
+   TALK TO US POPUP
+═══════════════════════════════════════════ */
+#talk-popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9000;align-items:center;justify-content:center;padding:16px;}
 #talk-popup.open{display:flex;}
-.popup-card{background:#FFFFFF;border-radius:16px;padding:32px;max-width:480px;width:100%;position:relative;max-height:90vh;overflow-y:auto;}
-.popup-close{position:absolute;top:14px;right:16px;font-size:20px;font-weight:900;color:#4A6A88;background:none;border:none;cursor:pointer;line-height:1;padding:4px 8px;}
-.popup-close:hover{color:#071A2E;}
+.popup-card{background:#FFFFFF;border-radius:16px;padding:28px;max-width:480px;width:100%;position:relative;max-height:92vh;overflow-y:auto;}
+@media(min-width:600px){.popup-card{padding:32px;}}
+.popup-close{position:absolute;top:14px;right:16px;font-size:20px;font-weight:900;color:#4A6A88;background:none;border:none;cursor:pointer;padding:4px 8px;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;}
 .popup-h{font-size:20px;font-weight:900;color:#071A2E;margin-bottom:4px;}
 .popup-sub{font-size:13px;font-weight:600;color:#4A6A88;margin-bottom:20px;}
 .pop-inp,.pop-sel,.pop-ta{width:100%;font-size:13px;font-weight:600;padding:11px 13px;border:1px solid #A8C0D4;border-radius:7px;margin-bottom:10px;background:#FFFFFF;color:#071A2E;outline:none;font-family:inherit;}
@@ -403,123 +459,79 @@ footer { background: #06101A; padding: 48px 0 24px; border-top: 1px solid #16263
 .pop-btn{background:#1860AA;color:#FFF;border:none;padding:13px;border-radius:7px;font-size:15px;font-weight:900;cursor:pointer;width:100%;font-family:inherit;}
 .pop-note{font-size:11px;font-weight:600;color:#6A8CA8;text-align:center;margin-top:8px;}
 .pop-consent{display:flex;align-items:flex-start;gap:8px;margin-bottom:12px;}
-.pop-consent input{margin-top:3px;flex-shrink:0;accent-color:#1860AA;}
+.pop-consent input{margin-top:3px;flex-shrink:0;accent-color:#1860AA;width:18px;height:18px;}
 .pop-consent span{font-size:11px;font-weight:600;color:#1E3A54;line-height:1.6;}
-
-/* ── INDEX MOBILE FIXES ── */
-@media(max-width:600px){
-  #hero { padding:40px 0 32px; }
-  .hero-h1 { font-size:26px; letter-spacing:-.02em; }
-  .hero-sub { font-size:14px; margin-bottom:18px; }
-  .hero-pills { gap:6px; margin-bottom:20px; }
-  .h-pill { font-size:10px; padding:4px 10px; }
-  .hero-dual-cta { flex-direction:column; gap:10px; }
-  .dual-cta-p, .dual-cta-s { text-align:center; padding:13px 20px; width:100%; box-sizing:border-box; }
-  .hero-card { margin-top:0; }
-  .hero-grid { gap:24px; }
-  .cta-label { font-size:10px; }
-  /* Segment hub */
-  .hub-grid { grid-template-columns:1fr 1fr; }
-  /* Section headings */
-  .h2-dk,.h2-lt { font-size:24px; }
-  /* Faculty scroll on mobile */
-  .fac-scroll-wrap { padding-bottom:8px; }
-  /* Programmes groups */
-  .pc-grid { grid-template-columns:1fr; }
-  /* Featured programme */
-  .pcf-header { flex-direction:column; }
-  .pcf-sidebar { width:100%; }
-  /* CTA panels */
-  .cta-grid { grid-template-columns:1fr; }
-  /* Footer */
-  .foot-grid { grid-template-columns:1fr 1fr; gap:20px; }
-}
-@media(max-width:380px){
-  .hero-h1 { font-size:22px; }
-  .hub-grid { grid-template-columns:1fr; }
-}
-
-/* ── GLOBAL MOBILE FIXES ── */
-@media(max-width:600px){
-  /* Typography */
-  .h2-dk,.h2-lt { font-size:22px !important; line-height:1.2; }
-  .body-dk,.body-lt { font-size:14px; }
-  /* Wrap padding */
-  .wrap { padding:0 18px; }
-  /* Hero */
-  .hero-h1 { font-size:24px !important; }
-  .hero-dual-cta { flex-direction:column; gap:10px; }
-  .dual-cta-p,.dual-cta-s { width:100%; text-align:center; padding:13px 16px; box-sizing:border-box; }
-  /* Faculty carousel — fix overflow at 400px */
-  .carousel-outer { padding:0 28px !important; }
-  .car-arrow { width:28px !important; height:28px !important; font-size:13px !important; }
-  .fac-slide { flex:0 0 calc(100% - 0px) !important; }
-  /* Cards */
-  .fac-card { padding:16px; }
-  .adv-grid { grid-template-columns:1fr 1fr !important; }
-  /* Grids → single column */
-  .founders-grid,.feat-grid,.belief-list { grid-template-columns:1fr !important; }
-  .story-grid { grid-template-columns:1fr !important; gap:24px !important; }
-  .pillar-grid { grid-template-columns:1fr !important; }
-  /* Programmes featured card */
-  .pcf-header { flex-direction:column !important; }
-  .pcf-sidebar { width:100% !important; }
-  /* Hub tiles */
-  .hub-grid { grid-template-columns:1fr 1fr !important; }
-  /* How it works steps */
-  .how-steps { flex-direction:column !important; gap:16px !important; }
-  /* Footer */
-  .foot-grid { grid-template-columns:1fr 1fr !important; gap:16px; }
-  /* Segment tiles */
-  .hub-card { padding:16px 14px !important; }
-  /* Outcomes grid */
-  .outcomes-grid { grid-template-columns:1fr 1fr !important; }
-  /* Stat strip */
-  .stat-strip { max-width:100% !important; }
-  /* CTA panels */
-  .cta-panels { flex-direction:column !important; }
-}
-@media(max-width:380px){
-  .hero-h1 { font-size:20px !important; }
-  .h2-dk,.h2-lt { font-size:19px !important; }
-  .hub-grid { grid-template-columns:1fr !important; }
-  .adv-grid { grid-template-columns:1fr !important; }
-  .carousel-outer { padding:0 22px !important; }
-}
-
 </style>
 
 <script>
+/* ── NAV TOGGLE ── */
 function toggleNav(){
   var d=document.getElementById('mob-drawer');
   var b=document.getElementById('ham-btn');
   if(!d||!b)return;
   var opening=!d.classList.contains('open');
-  if(opening){
-    d.style.display='flex';
-    d.classList.add('open');
-    document.body.classList.add('nav-open');
-    b.querySelector('span:nth-child(1)').style.transform='translateY(7px) rotate(45deg)';
-    b.querySelector('span:nth-child(2)').style.opacity='0';
-    b.querySelector('span:nth-child(3)').style.transform='translateY(-7px) rotate(-45deg)';
-  } else {
-    d.classList.remove('open');
-    d.style.display='none';
-    document.body.classList.remove('nav-open');
-    b.querySelector('span:nth-child(1)').style.transform='';
-    b.querySelector('span:nth-child(2)').style.opacity='1';
-    b.querySelector('span:nth-child(3)').style.transform='';
-  }
+  d.classList.toggle('open',opening);
+  d.style.display=opening?'flex':'none';
+  document.body.classList.toggle('nav-open',opening);
+  b.setAttribute('aria-expanded',opening);
+  var s=b.querySelectorAll('span');
+  s[0].style.transform=opening?'translateY(7px) rotate(45deg)':'';
+  s[1].style.opacity=opening?'0':'1';
+  s[2].style.transform=opening?'translateY(-7px) rotate(-45deg)':'';
+}
+/* Close drawer when any link inside is clicked */
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('#mob-drawer a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.getElementById('mob-drawer').classList.remove('open');
+      document.getElementById('mob-drawer').style.display='none';
+      document.body.classList.remove('nav-open');
+      var b=document.getElementById('ham-btn');
+      if(b){b.setAttribute('aria-expanded','false');var s=b.querySelectorAll('span');s[0].style.transform='';s[1].style.opacity='1';s[2].style.transform='';}
+    });
+  });
+  /* Escape closes both drawer and popup */
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){closeTalkPopup();if(document.getElementById('mob-drawer').classList.contains('open'))toggleNav();}
+  });
+});
+
+/* ── TALK TO US POPUP ── */
+function openTalkPopup(){
+  var p=document.getElementById('talk-popup');
+  p.classList.add('open');
+  p.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function closeTalkPopup(){
+  var p=document.getElementById('talk-popup');
+  p.classList.remove('open');
+  p.style.display='none';
+  document.body.style.overflow='';
+}
+function submitTalkPopup(){
+  var name=document.getElementById('pop-name').value.trim();
+  var email=document.getElementById('pop-email').value.trim();
+  var phone=document.getElementById('pop-phone').value.trim();
+  var consent=document.getElementById('pop-consent').checked;
+  if(!name){alert('Please enter your name.');return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){alert('Please enter a valid email address.');return;}
+  if(phone){var ph=phone.replace(/[\s\-\(\)]/g,'').replace(/^\+?91/,'');if(!/^[6-9]\d{9}$/.test(ph)){alert('Please enter a valid 10-digit Indian mobile number.');return;}}
+  if(!consent){alert('Please agree to the privacy notice.');return;}
+  closeTalkPopup();
+  var subj=encodeURIComponent('NeoProEd Enquiry from '+name);
+  var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nPhone: '+phone);
+  window.location.href='mailto:neoproed@gmail.com?subject='+subj+'&body='+body;
+  setTimeout(function(){window.location.href='thankyou.html?name='+encodeURIComponent(name);},800);
 }
 </script>
 </head>
 <body>
 
-<!-- UPDATED NAV -->
-<nav>
+<nav aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="index.html" class="logo">Neo<em>Pro</em>Ed</a>
-    <div class="nav-links">
+    <a href="index.html" class="logo" aria-label="NeoProEd home">Neo<em>Pro</em>Ed</a>
+    <div class="nav-links" role="list">
       <a href="programmes.html">Programmes</a>
       <a href="professionals.html">For Professionals</a>
       <a href="corporate.html">For Organisations</a>
@@ -530,12 +542,13 @@ function toggleNav(){
     <div class="nav-r">
       <a href="student-login.html" class="btn-ghost">Student Login</a>
     </div>
-    <button class="ham" id="ham-btn" onclick="toggleNav()" aria-label="Menu">
+    <button class="ham" id="ham-btn" onclick="toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="mob-drawer">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
-<div id="mob-drawer" style="display:none">
+
+<div id="mob-drawer" style="display:none" role="dialog" aria-label="Mobile navigation">
   <a href="programmes.html">Programmes</a>
   <a href="professionals.html">For Professionals</a>
   <a href="corporate.html">For Organisations</a>
@@ -543,9 +556,11 @@ function toggleNav(){
   <a href="faculty.html">Faculty</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact Us</a>
+  <a href="student-login.html">Student Login</a>
   <a href="enrol.html" class="mob-cta">Enrol Now →</a>
 </div>
-<!-- S1: HERO — dark, dual CTA -->
+
+<!-- HERO -->
 <section id="hero">
   <div class="wrap">
     <div class="hero-grid">
@@ -559,35 +574,23 @@ function toggleNav(){
           <span class="h-pill">Cohort-Based</span>
           <span class="h-pill">Stackable</span>
         </div>
-        <!-- DUAL CTA -->
         <div class="hero-dual-cta">
           <a href="programmes.html" class="dual-cta-p">Explore Programmes</a>
           <button class="dual-cta-s" onclick="openTalkPopup()">Talk to Us</button>
         </div>
-        
       </div>
       <div class="hero-card">
         <div class="hc-badge">Practitioner-built</div>
         <div class="hc-label">What makes us different</div>
-        <div class="hc-row">
-          <div class="hc-n">01</div>
-          <div><div class="hc-title">Run by industry practitioners</div><div class="hc-text">Every programme designed and delivered by professionals who have lived these roles</div></div>
-        </div>
-        <div class="hc-row">
-          <div class="hc-n">02</div>
-          <div><div class="hc-title">Employment first</div><div class="hc-text">Career pathways and role readiness built in from the start — not added as an afterthought</div></div>
-        </div>
-        <div class="hc-row">
-          <div class="hc-n">03</div>
-          <div><div class="hc-title">Insurance exclusive</div><div class="hc-text">Not a generic edtech platform — built entirely for the insurance and risk ecosystem</div></div>
-        </div>
+        <div class="hc-row"><div class="hc-n">01</div><div><div class="hc-title">Run by industry practitioners</div><div class="hc-text">Every programme designed and delivered by professionals who have lived these roles</div></div></div>
+        <div class="hc-row"><div class="hc-n">02</div><div><div class="hc-title">Employment first</div><div class="hc-text">Career pathways and role readiness built in from the start — not added as an afterthought</div></div></div>
+        <div class="hc-row"><div class="hc-n">03</div><div><div class="hc-title">Insurance exclusive</div><div class="hc-text">Not a generic edtech platform — built entirely for the insurance and risk ecosystem</div></div></div>
       </div>
     </div>
-    <div class="sh-arr">↓</div></div>
   </div>
 </section>
 
-<!-- S2: SEGMENT HUB — light, immediately after hero -->
+<!-- SEGMENT HUB -->
 <section id="segment-hub">
   <div class="wrap">
     <div class="ey-lt">Find your path</div>
@@ -626,19 +629,17 @@ function toggleNav(){
   </div>
 </section>
 
-
-<!-- IMAGE PLACEHOLDER BREAK 1 -->
-<div style="background:#06101A;padding:72px 0;position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0A1E30 0%,#06101A 50%,#0C1828 100%);"></div>
-  <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,#0A1C2E 0,#0A1C2E 1px,transparent 0,transparent 50%);background-size:28px 28px;opacity:.3;"></div>
-  <div style="position:relative;z-index:1;text-align:center;max-width:700px;margin:0 auto;padding:0 24px;">
-    <div style="display:inline-block;background:#1860AA;color:#FFF;font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:20px;">Practitioner-built</div>
-    <div style="font-size:24px;font-weight:900;color:#F5F9FF;line-height:1.35;letter-spacing:-.02em;margin-bottom:14px;">When faculty use a case study,<br>it is usually one they lived through.</div>
-    <p style="font-size:14px;font-weight:600;color:#A8C0D4;line-height:1.75;">Not simulations. Not textbook scenarios. Real decisions, real outcomes, real industry context.</p>
+<!-- DARK BREAK 1: Practitioner case study -->
+<div class="dark-break">
+  <div class="dark-break-pattern"></div>
+  <div class="dark-break-inner">
+    <div class="dark-break-badge" style="background:#1860AA;color:#FFF;">Practitioner-built</div>
+    <div class="dark-break-h">When faculty use a case study,<br>it is usually one they lived through.</div>
+    <p class="dark-break-p">Not simulations. Not textbook scenarios. Real decisions, real outcomes, real industry context.</p>
   </div>
 </div>
 
-<!-- S3: WHO IS THIS FOR — light -->
+<!-- WHO IS THIS FOR -->
 <section id="for-whom">
   <div class="wrap">
     <div class="ey-lt">Who is this for</div>
@@ -653,17 +654,20 @@ function toggleNav(){
   </div>
 </section>
 
-<!-- IMAGE BREAK 1 -->
-<div class="img-break" style="background:#071422;">
-  <div class="break-pattern"></div>
-  <div class="break-inner">
-    <div class="break-label">Practitioner-built</div>
-    <h2 class="break-h">"An insurance education platform designed and delivered entirely by people who have held the roles they teach"</h2>
-    <p class="break-sub">Every session led by someone who has lived the problems — and built the solutions.</p>
+<!-- IMAGE QUOTE — replace URL with your own photo -->
+<section class="img-quote-section">
+  <div class="img-quote-bg"></div>
+  <div class="img-quote-overlay"></div>
+  <div class="img-quote-inner">
+    <div class="img-quote-eyebrow">Practitioner-built</div>
+    <span class="img-quote-mark">&ldquo;</span>
+    <p class="img-quote-text">An insurance education platform designed and delivered entirely by people who have held the roles they teach</p>
+    <div class="img-quote-line"></div>
+    <p class="img-quote-sub" style="margin-top:16px;">Every session led by someone who has lived the problems — and built the solutions. Not a trainer. A practitioner.</p>
   </div>
-</div>
+</section>
 
-<!-- S4: HOW IT WORKS — dark -->
+<!-- HOW IT WORKS -->
 <section id="how">
   <div class="wrap">
     <div class="ey-dk">How NeoProEd works</div>
@@ -682,7 +686,7 @@ function toggleNav(){
   </div>
 </section>
 
-<!-- S5: PATHWAYS — light, after How It Works -->
+<!-- PATHWAYS -->
 <section id="pathways">
   <div class="wrap">
     <div class="ey-lt">Career pathways across the industry ecosystem</div>
@@ -705,76 +709,110 @@ function toggleNav(){
       <div class="rtile"><div class="r-dot"></div><div class="r-txt">Product Development</div></div>
       <div class="rtile"><div class="r-dot"></div><div class="r-txt">Operations</div></div>
       <div class="rtile"><div class="r-dot"></div><div class="r-txt">Marketing &amp; Communication</div></div>
-      <div class="rtile" style="border-style:dashed;opacity:.35;"><div class="r-dot" style="background:#C8DCF0;"></div><div class="r-txt" style="color:#C8DCF0;">More coming</div></div>
+      <div class="rtile"><div class="r-dot" style="background:#A8C0D4;"></div><div class="r-txt" style="color:#6A8CA8;">More coming</div></div>
     </div>
   </div>
 </section>
 
-
-<!-- IMAGE PLACEHOLDER BREAK 2 -->
-<div style="background:#071422;padding:72px 0;position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,#0A1C2E 0,#0A1C2E 1px,transparent 0,transparent 50%);background-size:28px 28px;opacity:.4;"></div>
-  <div style="position:relative;z-index:1;text-align:center;max-width:700px;margin:0 auto;padding:0 24px;">
-    <div style="display:inline-block;background:#3DB890;color:#06101A;font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:20px;">Employment-first</div>
-    <div style="font-size:24px;font-weight:900;color:#F5F9FF;line-height:1.35;letter-spacing:-.02em;margin-bottom:14px;">Career pathways and role readiness<br>built in from day one.</div>
-    <p style="font-size:14px;font-weight:600;color:#A8C0D4;line-height:1.75;">Not added as an afterthought. Not promised in the brochure and absent in the classroom.</p>
+<!-- DARK BREAK 2: Employment-first -->
+<div class="dark-break" style="background:#071422;">
+  <div class="dark-break-pattern"></div>
+  <div class="dark-break-inner">
+    <div class="dark-break-badge" style="background:#3DB890;color:#06101A;">Employment-first</div>
+    <div class="dark-break-h">Career pathways and role readiness<br>built in from day one.</div>
+    <p class="dark-break-p">Not added as an afterthought. Not promised in the brochure and absent in the classroom.</p>
   </div>
 </div>
 
-<!-- S6: PROGRAMMES — grouped, light, dual CTA -->
+<!-- PROGRAMMES -->
 <section id="programmes">
   <div class="wrap">
     <div class="ey-lt">What we offer</div>
     <h2 class="h2-lt">Our programmes</h2>
     <p class="body-lt" style="margin-bottom:32px;">Practitioner-designed. Career-focused. Stackable across your journey.</p>
 
-    <!-- GROUP 1: Individual -->
+    <!-- Group 1: Individual -->
     <div class="prog-group">
       <div class="prog-group-label">For individuals</div>
       <div class="prog-group-title">Professional &amp; Personal Enrolment</div>
-      <div class="prog-feat">
-        <div>
-          <div class="pf-tag">Flagship programme</div>
-          <div class="pf-title">Insurtech Professional Program</div>
-          <div class="pf-desc">12 weeks. 60 hours. Seven modules and a residential capstone. The most comprehensive insurance education programme built for India's market — for professionals already in insurance and those entering from outside.</div>
-          <div class="pf-pills"><span class="pf-pill">60 hours</span><span class="pf-pill">12 weeks</span><span class="pf-pill">Online + residential</span><span class="pf-pill">Cohort-based</span><span class="pf-pill">Founding cohort</span></div>
-          <div class="pf-build">
-            <div class="pf-bl">What you will build</div>
-            <div class="pf-bi"><div class="pf-bi-dot"></div>Functional knowledge across the full insurance value chain</div>
-            <div class="pf-bi"><div class="pf-bi-dot"></div>Industry context — how India's ecosystem actually operates</div>
-            <div class="pf-bi"><div class="pf-bi-dot"></div>Role readiness — skills applicable from Day 1</div>
+      <!-- Featured card -->
+      <div class="prog-card-featured">
+        <div class="pcf-header">
+          <div class="pcf-main">
+            <div class="pcf-badges">
+              <span class="pc-badge pc-badge-flagship">Flagship programme</span>
+              <span class="pc-badge pc-badge-stack">Recommended</span>
+            </div>
+            <div class="pcf-title">Insurtech Professional Program</div>
+            <p style="font-size:13px;font-weight:600;color:#A8C0D4;line-height:1.7;margin-bottom:14px;">The most comprehensive insurance education programme built for India's market — covering the full value chain from regulation and technology to global case studies and a residential capstone at GIFT City.</p>
+            <div class="pcf-body-pills">
+              <span class="pcf-pill">60 hours</span><span class="pcf-pill">12 weeks</span><span class="pcf-pill">Online live sessions</span><span class="pcf-pill">Residential capstone</span><span class="pcf-pill">Cohort-based</span><span class="pcf-pill">Certificate + LinkedIn badge</span>
+            </div>
+            <div class="pcf-who-label">Who this is for</div>
+            <div class="pcf-who-tags">
+              <span class="pcf-who-tag">Insurance professionals</span><span class="pcf-who-tag">BFSI entrants</span><span class="pcf-who-tag">MBA graduates</span><span class="pcf-who-tag">Agents upskilling</span>
+            </div>
+            <div class="pcf-topics-label">Key topics covered</div>
+            <div class="pcf-topic-tags">
+              <span class="pcf-topic-tag">IRDAI &amp; Regulation</span><span class="pcf-topic-tag">Insurance distribution</span><span class="pcf-topic-tag">Underwriting fundamentals</span><span class="pcf-topic-tag">Claims management</span><span class="pcf-topic-tag">InsurTech &amp; digital</span><span class="pcf-topic-tag">Global case studies</span><span class="pcf-topic-tag">GIFT City capstone</span>
+            </div>
+            <a href="#" class="pcf-brochure">↓ Download programme brochure</a>
+          </div>
+          <div class="pcf-sidebar">
+            <div class="sd-row"><div class="sd-label">Programme fee</div><div class="sd-price">₹50,000</div><div class="sd-price-note">Per part · GST additional</div></div>
+            <div class="sd-row"><div class="sd-label">Cohort starts</div><div class="sd-val">June 2025</div><div class="sd-sub">Wednesday evenings + Saturday mornings</div></div>
+            <div class="sd-row"><div class="sd-label">Duration</div><div class="sd-val">12 weeks</div><div class="sd-sub">60 hours · Online + residential capstone</div></div>
+            <div class="sd-row"><div class="sd-label">Assessment</div><div class="sd-val">75% attendance</div><div class="sd-sub">+ mandatory capstone participation</div></div>
+            <div class="sd-row" style="border-bottom:none;"><div class="sd-label">Seats available</div><div class="sd-val">Limited</div><div class="sd-sub">Founding cohort · Apply early</div></div>
+            <button class="pc-enrol-btn" onclick="window.location='enrol.html'">Enrol Now →</button>
+            <button class="pc-brochure-btn">Download Brochure</button>
+            <a href="programmes.html" class="pc-view-full">View full curriculum →</a>
           </div>
         </div>
-        <div class="pf-mods">
-          <div class="pf-ml">7 modules</div>
-          <div class="pf-m"><span class="pf-mn">M1</span>Ecosystem &amp; Foundations</div>
-          <div class="pf-m"><span class="pf-mn">M2</span>Regulation &amp; Compliance</div>
-          <div class="pf-m"><span class="pf-mn">M3</span>Technology Landscape</div>
-          <div class="pf-m"><span class="pf-mn">M4–5</span>Functions &amp; Cases</div>
-          <div class="pf-m"><span class="pf-mn">M6</span>Problems &amp; Solutions</div>
-          <div class="pf-m"><span class="pf-mn">M7</span>Strategy &amp; Road Ahead</div>
-          <div class="pf-m pf-cap"><span class="pf-mn">Cap</span>Residential Capstone</div>
+      </div>
+      <!-- Other individual cards -->
+      <div class="prog-grid">
+        <div class="prog-card">
+          <div class="pc-tag"><span class="pc-badge pc-badge-stack">Stackable</span></div>
+          <div class="pc-title">Insurtech Professional Program — Part 2</div>
+          <div class="pc-desc">6 weeks · 40 hours · Online · Follows Part 1</div>
+          <div class="pc-pills"><span class="pc-pill">₹50,000 per part + GST</span></div>
+          <div class="pc-foot"><span class="pc-meta">Follows Part 1</span><button class="pc-btn" onclick="window.location='programmes.html'">Learn more →</button></div>
+        </div>
+        <div class="prog-card">
+          <div class="pc-tag"><span class="pc-badge pc-badge-soon">Coming soon — register interest</span></div>
+          <div class="pc-title">Underwriting Certification Track</div>
+          <div class="pc-desc">A focused deep-dive into technical underwriting — risk assessment, pricing fundamentals, policy wordings, and portfolio management.</div>
+          <div class="pc-pills"><span class="pc-pill">20 hours</span><span class="pc-pill">6 weeks</span><span class="pc-pill">Online live</span></div>
+          <div class="pc-foot"><span class="pc-meta">₹18,000 + GST</span><button class="pc-btn" onclick="window.location='contact.html'">Register interest →</button></div>
+        </div>
+        <div class="prog-card">
+          <div class="pc-tag"><span class="pc-badge pc-badge-soon">Coming soon — register interest</span></div>
+          <div class="pc-title">Claims Management Certification Track</div>
+          <div class="pc-desc">End-to-end claims handling — investigation, documentation, settlement, disputes, and digital claims systems.</div>
+          <div class="pc-pills"><span class="pc-pill">20 hours</span><span class="pc-pill">6 weeks</span><span class="pc-pill">Online live</span></div>
+          <div class="pc-foot"><span class="pc-meta">₹18,000 + GST</span><button class="pc-btn" onclick="window.location='contact.html'">Register interest →</button></div>
         </div>
       </div>
       <div class="prog-dual-cta">
-        <button class="prog-cta-p" onclick="window.location='professionals.html'">Enrol as individual →</button>
+        <button class="prog-cta-p" onclick="window.location='enrol.html'">Enrol in the founding cohort →</button>
         <span class="prog-cta-label">Also available for team enrolment — see below</span>
       </div>
     </div>
 
     <div class="prog-divider"></div>
 
-    <!-- GROUP 2: Corporate / Institutional -->
+    <!-- Group 2: Organisational -->
     <div class="prog-group">
       <div class="prog-group-label">For organisations</div>
-      <div class="prog-group-title">Corporate &amp; Institutional Solutions</div>
-      <div class="prog3">
+      <div class="prog-group-title">Organisational &amp; Corporate Programmes</div>
+      <div class="prog-grid">
         <div class="prog-card">
           <div class="pc-tag">Bespoke</div>
-          <div class="pc-title">In-House Training Programmes</div>
-          <div class="pc-desc">Custom-designed training delivered inside your organisation — co-designed with your L&amp;D team, delivered by role-matched practitioners.</div>
-          <div class="pc-pills"><span class="pc-pill">Custom curriculum</span><span class="pc-pill">In-person or virtual</span><span class="pc-pill">Outcome reporting</span></div>
-          <div class="pc-foot"><span class="pc-meta">For insurers, brokers, GCCs</span><button class="pc-btn" onclick="window.location='contact.html'">Discuss →</button></div>
+          <div class="pc-title">Custom In-House Training</div>
+          <div class="pc-desc">Designed around your specific roles, products, regulatory context, and business goals. Not an off-the-shelf module — a programme co-built with your L&amp;D team.</div>
+          <div class="pc-pills"><span class="pc-pill">Flexible duration</span><span class="pc-pill">Co-designed</span><span class="pc-pill">Any team size</span></div>
+          <div class="pc-foot"><span class="pc-meta">Pricing on request</span><button class="pc-btn" onclick="window.location='contact.html'">Enquire →</button></div>
         </div>
         <div class="prog-card">
           <div class="pc-tag">Open cohort</div>
@@ -799,7 +837,7 @@ function toggleNav(){
 
     <div class="prog-divider"></div>
 
-    <!-- GROUP 3: University -->
+    <!-- Group 3: University -->
     <div class="prog-group">
       <div class="prog-group-label">For universities</div>
       <div class="prog-group-title">University &amp; Student Programmes</div>
@@ -833,30 +871,27 @@ function toggleNav(){
   </div>
 </section>
 
-<!-- FACULTY: DARK -->
+<!-- FACULTY -->
 <section id="faculty">
   <div class="wrap">
     <div class="ey-dk">Who teaches here</div>
     <h2 class="h2-dk">Learn from practitioners</h2>
     <p class="body-dk" style="margin-bottom:28px;">Every faculty member brings a lived specialism — not a studied one.</p>
-    <div class="fac-scroll-wrap">
+    <div class="fac-scroll-wrap overflow-safe">
       <div class="fac-grid-inner">
-      <div class="fc"><div class="fc-photo" style="background:#0C2240;"><div class="fc-photo-tag">Strategy &amp; M&amp;A</div></div><div class="fc-body"><div class="fc-name">Sneha Gokarn</div><div class="fc-spec">Former CEO, Gallagher India</div><div class="fc-bio">Led one of India's largest insurance broking businesses. Deep expertise in strategy, M&amp;A, and distribution transformation.</div><span class="fc-exp">20+ years</span></div></div>
-      <div class="fc"><div class="fc-photo" style="background:#082A1A;"><div class="fc-photo-tag">Distribution</div></div><div class="fc-body"><div class="fc-name">Yashesh Sampat</div><div class="fc-spec">Distribution Leader · CII Member</div><div class="fc-bio">25 years building and scaling insurance distribution across agency, bancassurance, and broker channels.</div><span class="fc-exp">25+ years</span></div></div>
-      <div class="fc"><div class="fc-photo" style="background:#241400;"><div class="fc-photo-tag">Operations</div></div><div class="fc-body"><div class="fc-name">Sumeet Darak</div><div class="fc-spec">Former COO, Gallagher India</div><div class="fc-bio">Led operations transformation and digital adoption across an MNC insurance broking context.</div><span class="fc-exp">20+ years</span></div></div>
-      <div class="fc"><div class="fc-photo" style="background:#180A28;"><div class="fc-photo-tag">Professional Ed</div></div><div class="fc-body"><div class="fc-name">Kirtan Shah</div><div class="fc-spec">TEDx Speaker · Edutech Co-founder</div><div class="fc-bio">Co-founder of FPA Edutech. Expert in translating complex financial services into learnable, applicable frameworks.</div><span class="fc-exp">Edutech co-founder</span></div></div>
-      <div class="fc fc-ph"><div class="fc-photo">+ Slot 5</div><div class="fc-body"><div class="fc-name" style="color:#162638;">Placeholder</div><div class="fc-bio" style="color:#162638;">Underwriting specialist · TBC</div></div></div>
-      <div class="fc fc-ph"><div class="fc-photo">+ Slot 6</div><div class="fc-body"><div class="fc-name" style="color:#162638;">Placeholder</div><div class="fc-bio" style="color:#162638;">Claims expert · TBC</div></div></div>
-      <div class="fc fc-ph"><div class="fc-photo">+ Slot 7</div><div class="fc-body"><div class="fc-name" style="color:#162638;">Placeholder</div><div class="fc-bio" style="color:#162638;">Actuarial &amp; analytics · TBC</div></div></div>
-      <div class="fc fc-ph"><div class="fc-photo">+ Slot 8</div><div class="fc-body"><div class="fc-name" style="color:#162638;">Placeholder</div><div class="fc-bio" style="color:#162638;">Regulatory expert · TBC</div></div></div>
-    
+        <div class="fc"><div class="fc-photo" style="background:#0C2240;"><div class="fc-photo-tag">Strategy &amp; M&amp;A</div></div><div class="fc-body"><div class="fc-name">Sneha Gokarn</div><div class="fc-spec">Former CEO, Gallagher India</div><div class="fc-bio">Led one of India's largest insurance broking businesses. Deep expertise in strategy, M&amp;A, and distribution transformation.</div><span class="fc-exp">20+ years</span></div></div>
+        <div class="fc"><div class="fc-photo" style="background:#082A1A;"><div class="fc-photo-tag">Distribution</div></div><div class="fc-body"><div class="fc-name">Yashesh Sampat</div><div class="fc-spec">Distribution Leader · CII Member</div><div class="fc-bio">25 years building and scaling insurance distribution across agency, bancassurance, and broker channels.</div><span class="fc-exp">25+ years</span></div></div>
+        <div class="fc"><div class="fc-photo" style="background:#241400;"><div class="fc-photo-tag">Operations</div></div><div class="fc-body"><div class="fc-name">Sumeet Darak</div><div class="fc-spec">Former COO, Gallagher India</div><div class="fc-bio">Led operations transformation and digital adoption across an MNC insurance broking context.</div><span class="fc-exp">20+ years</span></div></div>
+        <div class="fc"><div class="fc-photo" style="background:#180A28;"><div class="fc-photo-tag">Professional Ed</div></div><div class="fc-body"><div class="fc-name">Kirtan Shah</div><div class="fc-spec">TEDx Speaker · Edutech Co-founder</div><div class="fc-bio">Co-founder of FPA Edutech. Expert in translating complex financial services into learnable, applicable frameworks.</div><span class="fc-exp">Edutech co-founder</span></div></div>
+        <div class="fc fc-ph"><div class="fc-photo">+ Slot 5</div><div class="fc-body"><div class="fc-name" style="color:#162638;">Placeholder</div><div class="fc-bio" style="color:#162638;">Underwriting specialist · TBC</div></div></div>
+        <div class="fc fc-ph"><div class="fc-photo">+ Slot 6</div><div class="fc-body"><div class="fc-name" style="color:#162638;">Placeholder</div><div class="fc-bio" style="color:#162638;">Claims expert · TBC</div></div></div>
       </div>
     </div>
-    <div class="fac-cta"><a href="faculty.html" class="fac-cta-btn" style="display:inline-block;text-decoration:none;">View all faculty →</a></div>
+    <div class="fac-cta"><a href="faculty.html" class="fac-cta-btn">View all faculty →</a></div>
   </div>
 </section>
 
-<!-- SOCIAL: DARK -->
+<!-- SOCIAL -->
 <section id="social">
   <div class="wrap">
     <div class="ey-dk">From the community</div>
@@ -870,36 +905,29 @@ function toggleNav(){
       </div>
       <div>
         <div class="soc-col-lbl"><div class="soc-ico pod-ico">&#9711;</div>Podcast — The Insurance Insider</div>
-        <div class="pod-ep"><div class="pod-thumb" style="background:#0C2240;">EP 01</div><div class="pod-info"><div class="pod-show">The Insurance Insider</div><div class="pod-title">Why India's insurance industry is the career opportunity no one talks about</div><div class="pod-meta"><span>Ep 1</span><span>28 min</span></div></div><button class="pod-play">&#9654;</button></div>
-        <div class="pod-ep"><div class="pod-thumb" style="background:#082A1A;">EP 02</div><div class="pod-info"><div class="pod-show">The Insurance Insider</div><div class="pod-title">Distribution in India: how brokers, agents and bancassurance actually work</div><div class="pod-meta"><span>Ep 2</span><span>34 min</span></div></div><button class="pod-play">&#9654;</button></div>
-        <div class="pod-ep"><div class="pod-thumb" style="background:#241400;">EP 03</div><div class="pod-info"><div class="pod-show">The Insurance Insider</div><div class="pod-title">Claims in the digital era: what technology can and cannot fix</div><div class="pod-meta"><span>Ep 3</span><span>31 min</span></div></div><button class="pod-play">&#9654;</button></div>
-        
+        <div class="pod-ep"><div class="pod-thumb" style="background:#0C2240;">EP 01</div><div class="pod-info"><div class="pod-show">The Insurance Insider</div><div class="pod-title">Why India's insurance industry is the career opportunity no one talks about</div><div class="pod-meta"><span>Ep 1</span><span>28 min</span></div></div><button class="pod-play" aria-label="Play episode 1">&#9654;</button></div>
+        <div class="pod-ep"><div class="pod-thumb" style="background:#082A1A;">EP 02</div><div class="pod-info"><div class="pod-show">The Insurance Insider</div><div class="pod-title">Distribution in India: how brokers, agents and bancassurance actually work</div><div class="pod-meta"><span>Ep 2</span><span>34 min</span></div></div><button class="pod-play" aria-label="Play episode 2">&#9654;</button></div>
+        <div class="pod-ep"><div class="pod-thumb" style="background:#241400;">EP 03</div><div class="pod-info"><div class="pod-show">The Insurance Insider</div><div class="pod-title">Claims in the digital era: what technology can and cannot fix</div><div class="pod-meta"><span>Ep 3</span><span>31 min</span></div></div><button class="pod-play" aria-label="Play episode 3">&#9654;</button></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA DUAL: LIGHT — two panels, B2C and B2B -->
+<!-- CTA DUAL -->
 <section id="cta">
   <div class="wrap">
     <div class="ey-lt" style="margin-bottom:8px;">Ready to begin</div>
     <h2 class="h2-lt" style="margin-bottom:24px;">One platform, two paths in</h2>
     <div class="cta-dual-grid">
-      <!-- B2C Panel -->
       <div class="cta-b2c">
         <div class="cta-panel-eyebrow">For individuals</div>
         <div class="cta-panel-h">Be part of our founding cohort</div>
-        <div class="cta-founding-badges">
-          <span class="fb">Limited seats</span>
-          <span class="fb">High interaction</span>
-          <span class="fb">Direct founder access</span>
-        </div>
+        <div class="cta-founding-badges"><span class="fb">Limited seats</span><span class="fb">High interaction</span><span class="fb">Direct founder access</span></div>
         <p class="cta-panel-p">The founding cohort gets something no later cohort will — direct access to the founding team, an outsized influence on how the programme develops, and a lifelong connection to where NeoProEd began.</p>
         <button class="cta-panel-btn-p" onclick="window.location='programmes.html'">Explore Programmes →</button>
         <button class="cta-panel-btn-s" onclick="window.location='students.html'">For Students →</button>
         <div class="cta-panel-note">Individual enrolment · Cohort starting soon</div>
       </div>
-      <!-- B2B Panel -->
       <div class="cta-b2b">
         <div class="cta-panel-eyebrow">For organisations &amp; universities</div>
         <div class="cta-panel-h">Let's discuss what you need</div>
@@ -916,29 +944,56 @@ function toggleNav(){
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div><div class="foot-brand">Neo<em>Pro</em>Ed</div><div class="foot-tag">Industry-led professional education for India's insurance ecosystem. Built by practitioners, designed for careers.</div><div class="soc-row">
-  <a href="https://www.linkedin.com/company/neoproed" target="_blank" rel="noopener" class="si" style="background:#0A66C2;border-color:#0A66C2;color:#FFF;font-weight:900;font-size:11px;">in</a>
-  <a href="#" class="si" style="background:#FF0000;border-color:#FF0000;color:#FFF;font-size:10px;">&#9654;</a>
-  <a href="#" class="si" style="background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%);border-color:#d6249f;color:#FFF;font-size:13px;">&#9711;</a>
-  <a href="mailto:neoproed@gmail.com" class="si" style="background:#EA4335;border-color:#EA4335;color:#FFF;font-size:12px;">&#9993;</a>
-</div></div>
-      <div><div class="foot-col-h">Programmes</div><a href="#" class="foot-link">Insurtech Professional Program</a><a href="#" class="foot-link">Role-based tracks</a><a href="#" class="foot-link">University programmes</a><a href="#" class="foot-link">Corporate training</a></div>
-      <div><div class="foot-col-h">Who we serve</div><a href="professionals.html" class="foot-link">For Professionals</a><a href="corporate.html" class="foot-link">For Organisations</a><a href="universities.html" class="foot-link">For Universities</a><a href="students.html" class="foot-link">For Students</a></div>
-      <div><div class="foot-col-h">Company</div><a href="about.html" class="foot-link">About us</a><a href="faculty.html" class="foot-link">Faculty</a><a href="faculty.html#advisory" class="foot-link">Advisory board</a><a href="contact.html" class="foot-link">Contact</a></div>
+      <div>
+        <div class="foot-brand">Neo<em>Pro</em>Ed</div>
+        <div class="foot-tag">Industry-led professional education for India's insurance ecosystem. Built by practitioners, designed for careers.</div>
+        <div class="soc-row">
+          <a href="https://www.linkedin.com/company/neoproed" target="_blank" rel="noopener" class="si" style="background:#0A66C2;border-color:#0A66C2;color:#FFF;font-weight:900;font-size:11px;" aria-label="LinkedIn">in</a>
+          <a href="#" class="si" style="background:#FF0000;border-color:#FF0000;color:#FFF;font-size:10px;" aria-label="YouTube">&#9654;</a>
+          <a href="mailto:neoproed@gmail.com" class="si" style="background:#EA4335;border-color:#EA4335;color:#FFF;font-size:12px;" aria-label="Email">&#9993;</a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-col-h">Programmes</div>
+        <a href="programmes.html" class="foot-link">Insurtech Professional Program</a>
+        <a href="programmes.html" class="foot-link">Role-based tracks</a>
+        <a href="universities.html" class="foot-link">University programmes</a>
+        <a href="corporate.html" class="foot-link">Corporate training</a>
+      </div>
+      <div>
+        <div class="foot-col-h">Who we serve</div>
+        <a href="professionals.html" class="foot-link">For Professionals</a>
+        <a href="corporate.html" class="foot-link">For Organisations</a>
+        <a href="universities.html" class="foot-link">For Universities</a>
+        <a href="students.html" class="foot-link">For Students</a>
+      </div>
+      <div>
+        <div class="foot-col-h">Company</div>
+        <a href="about.html" class="foot-link">About us</a>
+        <a href="faculty.html" class="foot-link">Faculty</a>
+        <a href="contact.html" class="foot-link">Contact</a>
+        <a href="student-login.html" class="foot-link">Student Login</a>
+      </div>
     </div>
-        <div class="foot-bot"><div class="foot-legal" style="color:#3A5A78;">© 2026 NeoProEd Private Limited</div><div class="foot-legal" style="color:#3A5A78;"><a href="privacy-policy.html" style="color:#3A5A78;text-decoration:none;">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms-of-use.html" style="color:#3A5A78;text-decoration:none;">Terms of Use</a></div></div>
+    <div class="foot-bot">
+      <div class="foot-legal" style="color:#3A5A78;">© 2026 NeoProEd Private Limited</div>
+      <div class="foot-legal" style="color:#3A5A78;">
+        <a href="privacy-policy.html" style="color:#3A5A78;text-decoration:none;">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="terms-of-use.html" style="color:#3A5A78;text-decoration:none;">Terms of Use</a>
+      </div>
+    </div>
   </div>
 </footer>
 
 <!-- TALK TO US POPUP -->
-<div id="talk-popup" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9000;align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)closeTalkPopup()">
+<div id="talk-popup" style="display:none" role="dialog" aria-modal="true" aria-labelledby="popup-title" onclick="if(event.target===this)closeTalkPopup()">
   <div class="popup-card">
-    <button class="popup-close" onclick="closeTalkPopup()">&#215;</button>
-    <div class="popup-h">Let's talk</div>
+    <button class="popup-close" onclick="closeTalkPopup()" aria-label="Close">&#215;</button>
+    <div class="popup-h" id="popup-title">Let's talk</div>
     <div class="popup-sub">Tell us who you are — we'll respond within 1 business day.</div>
-    <input class="pop-inp" type="text" id="pop-name" placeholder="Your name" />
-    <input class="pop-inp" type="email" id="pop-email" placeholder="Work email address" />
-    <input class="pop-inp" type="tel" id="pop-phone" placeholder="Phone number (10 digits)" maxlength="15" />
+    <input class="pop-inp" type="text" id="pop-name" placeholder="Your name" autocomplete="name" />
+    <input class="pop-inp" type="email" id="pop-email" placeholder="Work email address" autocomplete="email" />
+    <input class="pop-inp" type="tel" id="pop-phone" placeholder="Phone number (10 digits)" maxlength="15" autocomplete="tel" />
     <select class="pop-sel" id="pop-type">
       <option value="">I represent...</option>
       <option>An insurer or reinsurer</option>
@@ -956,30 +1011,14 @@ function toggleNav(){
     <div class="pop-note">Senior team responds personally · All enquiries confidential</div>
   </div>
 </div>
-<script>
-function openTalkPopup(){var p=document.getElementById('talk-popup');p.style.display='flex';document.body.style.overflow='hidden';}
-function closeTalkPopup(){var p=document.getElementById('talk-popup');p.style.display='none';document.body.style.overflow='';}
-function submitTalkPopup(){
-  var name=document.getElementById('pop-name').value.trim();
-  var email=document.getElementById('pop-email').value.trim();
-  var phone=document.getElementById('pop-phone').value.trim();
-  var consent=document.getElementById('pop-consent').checked;
-  if(!name){alert('Please enter your name.');return;}
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){alert('Please enter a valid email address.');return;}
-  if(phone && phone.replace(/[^0-9]/g,'').length < 10){alert('Please enter a valid phone number (min 10 digits).');return;}
-  if(!consent){alert('Please agree to the privacy notice.');return;}
-  closeTalkPopup();
-  window.location='thankyou.html?type=org&name='+encodeURIComponent(name)+'&email='+encodeURIComponent(email);
-}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeTalkPopup();});
-</script>
+
 <!-- COOKIE BANNER -->
 <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#06101A;border-top:2px solid #1860AA;padding:14px 20px;z-index:9999;box-shadow:0 -4px 20px rgba(0,0,0,.4);">
   <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
     <div style="flex:1;min-width:220px;font-size:12px;font-weight:600;color:#E0EAF4;line-height:1.6;"><strong style="color:#F5F9FF;">We use cookies</strong> — for analytics and advertising, only with your consent. <a href="privacy-policy.html" style="color:#4DA8FF;">Privacy Policy</a></div>
     <div style="display:flex;gap:8px;flex-shrink:0;">
-      <button onclick="cookieChoice('accepted')" style="font-size:13px;font-weight:800;padding:9px 20px;border-radius:6px;background:#1860AA;color:#FFF;border:none;cursor:pointer;">Accept</button>
-      <button onclick="cookieChoice('declined')" style="font-size:13px;font-weight:800;padding:9px 18px;border-radius:6px;background:transparent;color:#A8C0D4;border:1px solid #2A4A6A;cursor:pointer;">Decline</button>
+      <button onclick="cookieChoice('accepted')" style="font-size:13px;font-weight:800;padding:9px 20px;border-radius:6px;background:#1860AA;color:#FFF;border:none;cursor:pointer;min-height:44px;">Accept</button>
+      <button onclick="cookieChoice('declined')" style="font-size:13px;font-weight:800;padding:9px 18px;border-radius:6px;background:transparent;color:#A8C0D4;border:1px solid #2A4A6A;cursor:pointer;min-height:44px;">Decline</button>
     </div>
   </div>
 </div>
@@ -987,5 +1026,6 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeTalkPop
 (function(){try{if(!localStorage.getItem('npe_consent')){document.getElementById('cookie-banner').style.display='block';}}catch(e){}})();
 function cookieChoice(c){try{localStorage.setItem('npe_consent',c);}catch(e){}document.getElementById('cookie-banner').style.display='none';}
 </script>
+
 </body>
 </html>
