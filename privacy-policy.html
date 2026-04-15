@@ -2,28 +2,63 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+  <meta name="description" content="NeoProEd Privacy Policy — how we collect, use, and protect your personal data under the DPDP Act 2023.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://neoproed.com/privacy-policy.html">
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | NeoProEd</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+/* ── OVERFLOW & STICKY FIX ── */
+html{overflow-x:clip;}
+*,*::before,*::after{box-sizing:border-box;}
+img,video,iframe{max-width:100%;height:auto;}
+
+/* ── NAV ── */
+nav{background:#06101A;border-bottom:1px solid #162638;position:sticky;top:0;z-index:500;width:100%;}
+.nav-inner{display:flex;align-items:center;padding:0 20px;height:54px;max-width:1080px;margin:0 auto;}
+@media(min-width:901px){.nav-inner{padding:0 48px;}}
+.logo{font-size:20px;font-weight:900;color:#F5F9FF;letter-spacing:-.02em;text-decoration:none;flex-shrink:0;}
+.logo em{color:#4DA8FF;font-style:normal;}
+.nav-links{display:flex;gap:4px;margin-left:16px;flex:1;}
+.nav-links a{font-size:12px;font-weight:700;color:#A8C0D4;padding:6px 8px;border-radius:5px;text-decoration:none;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:#F5F9FF;background:#0C1E30;}
+.nav-r{display:flex;gap:8px;align-items:center;flex-shrink:0;}
+.btn-ghost{font-size:12px;font-weight:700;color:#F5F9FF;padding:7px 13px;border:1px solid #4DA8FF;border-radius:6px;background:transparent;text-decoration:none;white-space:nowrap;}
+.btn-primary{font-size:12px;font-weight:800;color:#F5F9FF;padding:7px 14px;border-radius:6px;background:#1860AA;border:1px solid #1860AA;text-decoration:none;white-space:nowrap;}
+.ham{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:8px;background:none;border:none;flex-shrink:0;}
+.ham span{display:block;width:22px;height:2px;background:#E0EAF4;border-radius:2px;transition:transform .25s,opacity .25s;}
+#mob-drawer{display:none;position:fixed;left:0;right:0;top:54px;bottom:0;background:#06101A;z-index:199;flex-direction:column;overflow-y:auto;border-top:1px solid #1E3A52;}
+#mob-drawer.open{display:flex !important;}
+#mob-drawer a{font-size:16px;font-weight:700;color:#E0EAF4;padding:16px 24px;border-bottom:1px solid #162638;text-decoration:none;display:block;}
+#mob-drawer a:active{background:#0C1E30;}
+#mob-drawer .mob-cta{margin:20px 24px;background:#1860AA;color:#FFF;text-align:center;padding:14px;border-radius:8px;font-size:15px;font-weight:800;border-bottom:none;display:block;}
+body.nav-open{overflow:hidden;}
+@media(max-width:800px){
+  .nav-links{display:none;}
+  .nav-r{display:none;}
+  .nav-inner{justify-content:space-between;padding:0 16px;}
+
+  .ham{display:flex;}
+}
+@media(min-width:801px){
+  
+}
+
+
+
+
+
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:#FFFFFF;color:#071A2E;}
 .wrap{max-width:860px;margin:0 auto;padding:0 24px;}
 @media(min-width:900px){.wrap{padding:0 48px;}}
-nav{background:#06101A;border-bottom:1px solid #162638;}
-.nav-inner{display:flex;align-items:center;padding:15px 24px;max-width:1080px;margin:0 auto;}
-@media(min-width:900px){.nav-inner{padding:15px 48px;}}
-.logo{font-size:20px;font-weight:900;color:#F5F9FF;letter-spacing:-.02em;text-decoration:none;}
-.logo em{color:#4DA8FF;font-style:normal;}
+
 .nav-sp{flex:1;}
-.btn-primary{font-size:12px;font-weight:800;color:#F5F9FF;padding:7px 14px;border-radius:6px;background:#1860AA;border:none;text-decoration:none;display:inline-block;}
-.breadcrumb{background:#F2F7FC;border-bottom:1px solid #C8DCF0;padding:10px 24px;}
-.bc-inner{max-width:860px;margin:0 auto;display:flex;gap:6px;font-size:12px;}
-.bc-link{color:#1860AA;font-weight:600;text-decoration:none;}
-.bc-sep{color:#8AAEC8;}
-.bc-cur{color:#2E4A62;font-weight:600;}
 /* Content */
 .policy-hero{background:#06101A;padding:48px 0 36px;}
 .policy-hero h1{font-size:28px;font-weight:900;color:#F5F9FF;margin-bottom:8px;}
@@ -40,22 +75,111 @@ nav{background:#06101A;border-bottom:1px solid #162638;}
 .info-box p{margin-bottom:0;}
 footer{background:#06101A;padding:28px 24px;border-top:1px solid #162638;text-align:center;}
 .foot-legal{font-size:11px;font-weight:600;color:#2A4060;}
+
+/* ── GLOBAL MOBILE FIXES ── */
+@media(max-width:600px){
+  /* Typography */
+  .h2-dk,.h2-lt { font-size:22px !important; line-height:1.2; }
+  .body-dk,.body-lt { font-size:14px; }
+  /* Wrap padding */
+  .wrap { padding:0 18px; }
+  /* Hero */
+  .hero-h1 { font-size:24px !important; }
+  .hero-dual-cta { flex-direction:column; gap:10px; }
+  .dual-cta-p,.dual-cta-s { width:100%; text-align:center; padding:13px 16px; box-sizing:border-box; }
+  /* Faculty carousel — fix overflow at 400px */
+  .carousel-outer { padding:0 28px !important; }
+  .car-arrow { width:28px !important; height:28px !important; font-size:13px !important; }
+  .fac-slide { flex:0 0 calc(100% - 0px) !important; }
+  /* Cards */
+  .fac-card { padding:16px; }
+  .adv-grid { grid-template-columns:1fr 1fr !important; }
+  /* Grids → single column */
+  .founders-grid,.feat-grid,.belief-list { grid-template-columns:1fr !important; }
+  .story-grid { grid-template-columns:1fr !important; gap:24px !important; }
+  .pillar-grid { grid-template-columns:1fr !important; }
+  /* Programmes featured card */
+  .pcf-header { flex-direction:column !important; }
+  .pcf-sidebar { width:100% !important; }
+  /* Hub tiles */
+  .hub-grid { grid-template-columns:1fr 1fr !important; }
+  /* How it works steps */
+  .how-steps { flex-direction:column !important; gap:16px !important; }
+  /* Footer */
+  .foot-grid { grid-template-columns:1fr 1fr !important; gap:16px; }
+  /* Segment tiles */
+  .hub-card { padding:16px 14px !important; }
+  /* Outcomes grid */
+  .outcomes-grid { grid-template-columns:1fr 1fr !important; }
+  /* Stat strip */
+  .stat-strip { max-width:100% !important; }
+  /* CTA panels */
+  .cta-panels { flex-direction:column !important; }
+}
+@media(max-width:380px){
+  .hero-h1 { font-size:20px !important; }
+  .h2-dk,.h2-lt { font-size:19px !important; }
+  .hub-grid { grid-template-columns:1fr !important; }
+  .adv-grid { grid-template-columns:1fr !important; }
+  .carousel-outer { padding:0 22px !important; }
+}
+
 </style>
+
+<script>
+function toggleNav(){
+  var d=document.getElementById('mob-drawer');
+  var b=document.getElementById('ham-btn');
+  if(!d||!b)return;
+  var opening=!d.classList.contains('open');
+  if(opening){
+    d.style.display='flex';
+    d.classList.add('open');
+    document.body.classList.add('nav-open');
+    b.querySelector('span:nth-child(1)').style.transform='translateY(7px) rotate(45deg)';
+    b.querySelector('span:nth-child(2)').style.opacity='0';
+    b.querySelector('span:nth-child(3)').style.transform='translateY(-7px) rotate(-45deg)';
+  } else {
+    d.classList.remove('open');
+    d.style.display='none';
+    document.body.classList.remove('nav-open');
+    b.querySelector('span:nth-child(1)').style.transform='';
+    b.querySelector('span:nth-child(2)').style.opacity='1';
+    b.querySelector('span:nth-child(3)').style.transform='';
+  }
+}
+</script>
 </head>
 <body>
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="logo">Neo<em>Pro</em>Ed</a>
-    <div class="nav-sp"></div>
-    <a href="enrol.html" class="btn-primary">Enrol now</a>
+    <div class="nav-links">
+      <a href="programmes.html">Programmes</a>
+      <a href="professionals.html">For Professionals</a>
+      <a href="corporate.html">For Organisations</a>
+      <a href="universities.html">For Universities</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-r">
+      <a href="student-login.html" class="btn-ghost">Student Login</a>
+    </div>
+    <button class="ham" id="ham-btn" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
-<div class="breadcrumb">
-  <div class="bc-inner">
-    <a href="index.html" class="bc-link">Home</a>
-    <span class="bc-sep">›</span>
-    <span class="bc-cur">Privacy Policy</span>
-  </div>
+<div id="mob-drawer" style="display:none">
+  <a href="programmes.html">Programmes</a>
+  <a href="professionals.html">For Professionals</a>
+  <a href="corporate.html">For Organisations</a>
+  <a href="universities.html">For Universities</a>
+  <a href="faculty.html">Faculty</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="enrol.html" class="mob-cta">Enrol Now →</a>
+</div>
 </div>
 <section class="policy-hero">
   <div class="wrap">
@@ -70,7 +194,7 @@ footer{background:#06101A;padding:28px 24px;border-top:1px solid #162638;text-al
     </div>
 
     <h2>1. Who we are</h2>
-    <p>NeoProEd Private Limited is a professional education organisation registered in India (NIC Code 85499). Our website is <a href="https://neoproed.com">neoproed.com</a>. For data-related queries, contact us at <a href="/cdn-cgi/l/email-protection#addddfc4dbccced4edc3c8c2dddfc2c8c983cec2c0"><span class="__cf_email__" data-cfemail="b0c0c2d9c6d1d3c9f0ded5dfc0c2dfd5d49ed3dfdd">[email&#160;protected]</span></a>.</p>
+    <p>NeoProEd Private Limited is a professional education organisation registered in India (NIC Code 85499). Our website is <a href="https://neoproed.com">neoproed.com</a>. For data-related queries, contact us at <a href="mailto:neoproed@gmail.com">neoproed@gmail.com</a>.</p>
 
     <h2>2. What personal data we collect</h2>
     <p>We collect only the data required for the stated purpose. Depending on your interaction with us, this may include:</p>
@@ -97,7 +221,7 @@ footer{background:#06101A;padding:28px 24px;border-top:1px solid #162638;text-al
     <h2>4. Legal basis for processing</h2>
     <p>We process your data on the basis of:</p>
     <ul>
-      <li><strong>Consent:</strong> for marketing communications and analytics tracking. You may withdraw consent at any time by emailing <a href="/cdn-cgi/l/email-protection#5323213a2532302a133d363c23213c36377d303c3e"><span class="__cf_email__" data-cfemail="08787a617e696b7148666d67787a676d6c266b6765">[email&#160;protected]</span></a>.</li>
+      <li><strong>Consent:</strong> for marketing communications and analytics tracking. You may withdraw consent at any time by emailing <a href="mailto:neoproed@gmail.com">neoproed@gmail.com</a>.</li>
       <li><strong>Contract:</strong> to fulfil your enrolment and deliver the programme you enrolled in.</li>
       <li><strong>Legitimate interests:</strong> to respond to enquiries and operate our business.</li>
       <li><strong>Legal obligation:</strong> to maintain records for GST and regulatory compliance.</li>
@@ -133,14 +257,14 @@ footer{background:#06101A;padding:28px 24px;border-top:1px solid #162638;text-al
       <li><strong>Withdraw consent:</strong> withdraw your consent to marketing communications or analytics at any time</li>
       <li><strong>Grievance redressal:</strong> raise a complaint about how we have handled your data</li>
     </ul>
-    <p>To exercise any of these rights, email us at <a href="/cdn-cgi/l/email-protection#fc8c8e958a9d9f85bc9299938c8e939998d29f9391"><span class="__cf_email__" data-cfemail="59292b302f383a2019373c36292b363c3d773a3634">[email&#160;protected]</span></a>. We will respond within 30 days.</p>
+    <p>To exercise any of these rights, email us at <a href="mailto:neoproed@gmail.com">neoproed@gmail.com</a>. We will respond within 30 days.</p>
 
     <h2>8. Cookies and tracking</h2>
     <p>We use cookies and tracking technologies for analytics and advertising. These are activated only after you give explicit consent via the cookie banner displayed on your first visit. If you choose "Essential only", no advertising or analytics cookies are set.</p>
     <p>You can withdraw cookie consent at any time by clearing your browser's local storage or by contacting us.</p>
 
     <h2>9. Children's data</h2>
-    <p>This website is intended for users aged 18 and above. We do not knowingly collect personal data from individuals under 18. If you believe a minor has submitted data through our website, please contact us immediately at <a href="/cdn-cgi/l/email-protection#9bebe9f2edfaf8e2dbf5fef4ebe9f4feffb5f8f4f6"><span class="__cf_email__" data-cfemail="0d7d7f647b6c6e744d6368627d7f626869236e6260">[email&#160;protected]</span></a>.</p>
+    <p>This website is intended for users aged 18 and above. We do not knowingly collect personal data from individuals under 18. If you believe a minor has submitted data through our website, please contact us immediately at <a href="mailto:neoproed@gmail.com">neoproed@gmail.com</a>.</p>
 
     <h2>10. Security</h2>
     <p>We implement appropriate technical and organisational measures to protect your personal data. Payment data is handled entirely by Razorpay — NeoProEd does not store card numbers, bank credentials, or UPI PINs. All data transmitted to and from our website is encrypted using HTTPS.</p>
@@ -153,4 +277,4 @@ footer{background:#06101A;padding:28px 24px;border-top:1px solid #162638;text-al
     <div class="info-box">
       <p><strong>Data Protection Contact</strong><br>
       NeoProEd Private Limited<br>
-      Email: <a href="/cdn-cgi/l/email-protection#49393b203f282a3009272c26393b262c2d672a2624"><span class="__cf_email__" data-cfemail="d1a1a3b8a7b0b2a891bfb4bea1a3beb4b5f
+      Email: <a href="mailto:neoproed@gmail.com"><span class="__cf_email__" data-cfemail="d1a1a3b8a7b0b2a891bfb4bea1a3beb4b5f
